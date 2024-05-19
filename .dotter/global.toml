@@ -1,5 +1,13 @@
 [helpers]
 
+[nushell]
+depends = []
+
+[nushell.files]
+nushell = '~/.config/nushell'
+
+[nushell.variables]
+
 [nvim]
 depends = []
 

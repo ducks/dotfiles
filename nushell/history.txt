@@ -1,0 +1,2946 @@
+ls
+nvim ~/.Xmodmap
+vnim ~/.config/nvim/init.vim
+nvim ~/.config/nvim/init.vim
+history | rg "openvpn"
+history | grep "openvpn"
+history
+alias mullvad = "cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf"
+signal-desktop 
+xfce4-screenshooter 
+cat /var/log/journal/f8a1e81fa4cb42a8b5d4a0e51617a8ac/system@0005d75f7476af90-9679dd5785d4f995.journal~
+cat /var/log/Xorg.0.log
+cd /etc/openvpn/
+ls
+openvpn 
+mullvad
+alias mullvad = "cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf"
+mullvad
+cd client/
+thunar
+xfce4-screenshooter 
+signal-desktop 
+cd devel/
+ls
+git clone git@gitlab.com:_ducks/punkte.git
+cat ~/.ssh/id_rsa.pub
+cat ~/.ssh
+ls ~/.ssh
+git clone git@gitlab.com:_ducks/punkte.git
+ls ~/.config/nvim/init.vim
+cd punkte/
+mkdir nvim
+ls
+cp ~/.config/nvim/init.vim nvim/
+ls nvim/
+nvim
+ls
+git status
+git add nvim
+git commit -am "adding nvim init file"
+git config --global user.email "jake.goldsborough@pm.me"
+git config --global user.name "jake goldsborough"
+git commit -am "adding nvim init file"
+git status
+git push
+cd ../
+ls
+ls node/
+nvim ~/.config/nvim/init.vim
+nvim -V nvim.log
+ls
+nvim -V ./nvim.log
+nvim ~/.config/nvim/init.vim
+nvim node/express/index.js
+nvim --version
+signal-desktop 
+vim ~/.xinitrc
+nvim ~/.xinitrc
+sudo nvim /etc/X11/mhwd.d/nvidia.conf
+cp /etc/X11/mhwd.d/nvidia.conf /etc/X11/mhwd.d/nvidia.conf.bkp
+ls /etc/X11/mhwd.d/
+ls -la /etc/X11/mhwd.d/
+sudo cp /etc/X11/mhwd.d/nvidia.conf /etc/X11/mhwd.d/nvidia.conf.bkp
+ls -la /etc/X11/mhwd.d/
+sudo nvim /etc/X11/mhwd.d/nvidia.conf
+ls .nvidia-settings-rc
+cat .nvidia-settings-rc
+cat /var/log/Xorg.0.log
+cat /var/log/Xorg.1.log
+cat /var/log/Xorg.0.log
+ls /lib/modules/5.15.50-1-MANJARO/kernel/
+mullvad
+alias mullvad = "cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf"
+mullvad
+signal-desktop 
+alias mullvad = "cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf"
+mullvad
+alias mullvad = "cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf;"
+mullvad
+xfce4-screenshooter 
+signal-desktop 
+alias mullvad = "cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf;"
+nvim ~/.config/nushell/config.nu
+nvim ~/.config/nu/config.toml
+nvim ~/.config/nushell/env.nu
+xfce4-screenshooter 
+signal-desktop 
+xfce4-screenshooter 
+curl ipconfig
+echo ipconfig
+curl ifconfig.me
+xfce4-screenshooter 
+signal-desktop 
+history | grep "openvpn"
+cd /etc/openvpn/client/; sudo openvpn --config
+history | grep "openvpn"
+xfce4-screenshooter 
+ls -la
+ls /var/log/Xorg.0.log
+cat /var/log/Xorg.0.log
+ls /var/log/
+ls /var/log/lightdm/
+sudo ls /var/log/lightdm/
+sudo cat /var/log/lightdm/
+sudo cat /var/log/lightdm/lightdm.log
+sudo ls /var/log/lightdm/
+sudo ls /var/log/lightdm/x-0.log
+sudo cat /var/log/lightdm/x-0.log
+cat /var/log/pacman.log
+cat /var/log/journal/f8a1e81fa4cb42a8b5d4a0e51617a8ac/system@0005d7370b4b8b5f-29e4c289cf21d121.journal
+cat /var/log/journal/f8a1e81fa4cb42a8b5d4a0e51617a8ac/system@0005d7370b4b8b5f-29e4c289cf21d121.journal~
+journalctl --reverse
+journalctl  -b -0
+journalctl  -b -0 -reverse
+journalctl  -b -0 --reverse
+cat /var/log/lightdm/
+sudo ls /var/log/lightdm
+sudo cat /var/log/lightdm/x-1.log
+sudo cat /var/log/lightdm/x-0.log
+cat /etc/X11/xorg.conf
+sudo ls /var/log/lightdm
+sudo ls /var/log/lightdm/lightdm.log
+sudo cat /var/log/lightdm/lightdm.log
+journalctl -p 3 -xb
+journalctl -p 3 -xb | grep light
+sudo systemctl enable lxdm.service --force
+journalctl -p 3 -xb | grep firefox
+light-locker 
+sudo systemctl enable lightdm.service --force
+journalctl -p 3 -xb | grep firefox
+journalctl -p 3 -xb
+pacmd dump | grep module-bluetooth
+journalctl -p 3 -xb
+cat /etc/pulse/default.pa
+man sed
+sudo sed -Ei '/load-module module-bluetooth*/s/^/#/' /etc/pulse/default.pa
+cat /etc/pulse/default.pa
+journalctl -p 3 -xb
+journalctl -p 3 -xb | grep pulse
+systemctl restart pulseaudio
+systemctl status pulseaudio.service
+systemctl --user restart pulseaudio
+journalctl -p 3 -xb
+journalctl -p 3 -xb | grep light
+journalctl -p 3 -xb | grep pulse
+journalctl -p 3 -xb | grep firefox
+mhwd-kernel -li
+journalctl -p 3 -xb
+mhwd -li
+sudo nvidia-settings
+cat /etc/X11/mhwd.d/nvidia.conf
+sudo mhwd-gpu --setmod nvidia --setxorg /etc/X11/mhwd.d/nvidia.conf
+journalctl -p 3 -xb
+journalctl -xb
+journalctl -xb --reverse
+journalctl -p 3 -xb --reverse
+lightdm --version
+inxi -Fxzc0
+journalctl -p 3 -xb --reverse
+journalctl -p err -xb --reverse
+xfwm4 --version
+ls -la
+chown -R urho /home/urho
+ls -la
+journalctl -p 3 -xb --reverse
+systemctl
+journalctl -p 3 -xb --reverse
+history | grep "openvpn"
+cd Documents/
+vim darin-hanvey-address
+nvim darin-hanvey-address
+cat /var/log/lxdm.log
+sudo cat /var/log/lxdm.log
+signal-desktop 
+ls /etc/openvpn/client/
+cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf
+cat Documents/darin-hanvey-address
+xfce4-screenshooter 
+ls
+ls Documents/
+cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf
+signal-desktop 
+cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf
+xfce4-screenshooter 
+htop
+glxgears
+glxgears_pixmap32 
+inxi -Fxxxza --no-host
+cpupower frequency-set -g performance
+sudo cpupower frequency-set -g performance
+htop
+inxi -Fxxxza --no-host
+sensors
+htop
+sensors
+sudo cpupower frequency-set -g ondemand
+sensors
+sudo cpupower frequency-set -g powersave
+systemctl status pulseaudio.service
+systemctl status pulseaudio
+sudo systemctl --user status pulseaudio.service
+signal-desktop 
+xfce4-screenshooter 
+systemctl --user status pulseaudio.service
+sudo alsa force-reload
+alsa force-reload
+alsamixer
+signal-desktop 
+xfce4-screenshooter 
+vim Documents/priority-bike-code
+nvim Documents/priority-bike-code
+cat Documents/priority-bike-code
+xfce4-screenshooter 
+sudo systemctl --user status pulseaudio.service
+systemctl --user status pulseaudio.service
+localectl status
+locale -a
+man locale
+man 7 locale
+localectl status
+localectl status --help
+localectl status list-locales
+localectl list-locales
+localectl status
+cat /etc/locale.conf
+vim /etc/locale.conf
+nvim /etc/locale.conf
+sudo nvim /etc/locale.conf
+localectl restart
+localectl --help
+systemctl --user status pulseaudio.service
+localectl status
+inxi -Fxxxza --no-host
+systemctl --user status pulseaudio.service
+inxi -Fxxxza --no-host
+systemctl status pipewire
+systemctl --user status pulseaudio.service
+paucontrol
+systemctl --user restart pulseaudio.service
+systemctl --user status pulseaudio.service
+systemctl status lightdm
+systemctl --user status pulseaudio.service
+htop
+systemctl --user status pulseaudio.service
+systemd-analyze blame
+systemd-analyze blame --user
+systemctl --user status pulseaudio.service
+pacman --help
+pacman -Qs pipewire
+pactree -r pipewire
+pacman -R pipewire
+sudo pacman -R pipewire
+pactree -r xdg-desktop-portal
+pactree -r flatpak
+sudo pacman -R flatpak
+pactree -r libpamac-flatpak-plugin
+sudo pacman -R libpamac-flatpak-plugin
+sudo pacman -R flatpak
+sudo pacman -R pipewire
+sudo pacman -R xdg-desktop-portal
+sudo pacman -R pipewire
+inxi -Fxxxza --no-host
+systemctl --user status pulseaudio.service
+systemd-analyze blame --user
+systemd-analyze blame
+systemd-analyze critical-chain
+journalctl -xe
+lsusb --help
+lsusb -vt
+systemd-analyze blame
+systemctl status bluetooth
+pau
+paucontrol
+systemd-analyze blame
+systemd-analyze blame --user
+systemctl status pulseaudio
+systemctl --user status pulseaudio.service
+inxi -Fxxxza --no-host
+signal-desktop 
+inxi -Fxxxza --no-host
+systemd-analyze blame
+systemd-analyze blame --user
+systemctl --user status pulseaudio.service
+dmesg 
+dmesg -w
+sudo dmesg -w
+systemctl --user status pulseaudio.service
+pulseaudio -v
+journalctl -xe
+systemctl --user status pulseaudio.service
+journalctl -xe
+sudo dmesg -w
+inxi -Fxxxza --no-host
+systemctl status upower
+sudo systemd-analyze critical-chain
+systemctl status systemd-modules-load
+lsusb -vt
+inxi -Fxxxza --no-host
+xfce4-screenshooter 
+journalctl -xe
+systemctl status --user pulseaudio
+journalctl -xe
+cat /var/log/Xorg.0.log
+cat /etc/X11/xorg.conf
+xfce4-screenshooter 
+cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf
+signal-desktop 
+ls
+pacmd list
+journalctl -xe
+systemctl status --user pulseaudio
+inxi -Fxxxz
+cat ~/.xinitrc
+cat ~/.bash_profile
+cat ~/.zshenv
+vim ~/.xinitrc
+nvim ~/.xinitrc
+cat /etc/lightdm/lightdm.conf
+cat /etc/lightdm/lightdm.conf.pacnew
+signal-desktop 
+journalctl -xe
+tlp-stat --usb
+journalctl -xe
+systemctl status --user pulseaudio
+inxi -Fxxxz
+glxinfo
+xfce4-screenshooter 
+pactree -r ceph-libs
+xfce4-screenshooter 
+sudo pacman -Syyu
+sudo pacman -Syu
+xfce4-screenshooter 
+cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf
+xfce4-screenshooter 
+signal-desktop 
+ls
+config
+which nu
+nu --help
+nvim .config/nushell/config.nu
+nvim /etc/shells
+sudo nvim /etc/shells
+nu
+chsh -s /bin/nu urho
+cat /etc/shells
+sudo chsh -s /bin/nu
+nvim .config/alacritty/alacritty.yml
+sudo chsh -s /bin/nu urho
+alacritty
+inxi -G
+mhwd -l
+mhwd -li
+sudo mhwd -a pci free 0300
+sudo mhwd-gpu --check
+sudo mhwd-gpu --status
+sudo mhwd -r pci video-nvidia
+uname -a
+uname -r
+uname -o
+uname -v
+uname -av
+sudo mhwd -a pci nonfree 0300
+cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf
+sudo cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf
+xfce4-screenshooter 
+cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf
+signal-desktop 
+cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf
+sudo cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf
+cd -s /etc/openvpn/client/; sudo openvpn --config mullvad.conf
+sudo openvpn --config /etc/openvpn/client/mullvad.conf
+ls -la /etc/openvpn/
+cd /etc/
+cd openvpn/
+cd client/
+ls -la
+signal-desktop 
+ls
+cd devel/
+ls
+mkdir deno
+rustup update
+cargo install deno --locked
+deno --version
+nvim --version
+cd .config/nvim/
+ls
+vim init.vim
+nvim
+bluetoothctl
+sudo systemctl status bluetooth.service
+systemctl status bluetooth.servic3e
+systemctl status bluetooth.service
+modprobe btusb
+sudo systemctl start bluetooth.service
+systemctl status bluetooth.service
+cd devel/20200806_LINUX_BT_DRIVER_RTL8761B_COEX_v0202/20200806_LINUX_BT_DRIVER_RTL8761B_COEX_v0202/
+ls
+cat Makefile
+cat Readme.txt
+sudo make install INTERFACE=usb
+ls
+ls usb/
+ls
+sudo make install INTERFACE=usb
+ls /lib/modules/5.15.81-1-MANJARO/kernel/
+ls /lib/modules/5.15.81-1-MANJARO/kernel/drivers/
+ls /lib/modules/5.15.81-1-MANJARO/kernel/drivers/bluetooth/
+cat Readme.txt
+ls usb/
+ls usb/bluetooth_usb_driver/
+mv /lib/modules/5.15.81-1-MANJARO/kernel/drivers/bluetooth/btusb.ko.xz /home
+cat Makefile
+sudo mv /lib/modules/5.15.81-1-MANJARO/kernel/drivers/bluetooth/btusb.ko.xz /home
+sudo make install INTERFACE=usb
+sudo mv /home/btusb.ko.xz /lib/modules/5.15.81-1-MANJARO/kernel/drivers/bluetooth/
+ls /lib/modules/5.15.81-1-MANJARO/kernel/drivers/blue
+ls /lib/modules/5.15.81-1-MANJARO/kernel/drivers/bluetooth/
+systemctl status bluetooth.service
+systemctl start bluetooth.service
+systemctl status bluetooth.service
+modprobe btusb
+sudo modprobe btusb
+sudo make install INTERFACE=usb
+sudo modprobe rtk_btusb
+sudo modprobe rtk_btusb && dmesg | grep rtk
+cd devel/20200806_LINUX_BT_DRIVER_RTL8761B_COEX_v0202/20200806_LINUX_BT_DRIVER_RTL8761B_COEX_v0202/
+sudo modprobe rtk_btusb
+sudo make install INTERFACE=usb
+cd devel/20200806_LINUX_BT_DRIVER_RTL8761B_COEX_v0202/20200806_LINUX_BT_DRIVER_RTL8761B_COEX_v0202/
+cat Readme.txt
+sudo systemctl restart bluetooth
+lsusb | grep -i bt500
+bluetoothctl
+xfce4-screenshooter 
+cd -s /etc/openvpn/client/; sudo openvpn --config mullvad.conf
+cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf
+ls -la /etc/openvpn/client/
+ls -la /etc/openvpn
+groups urho
+cat /etc/X11/mhwd.d/nvidia.conf
+cd /etc/openvpn/client/; sudo openvpn --config mullvad.conf
+systemctl status bluetooth.service
+sudo systemctl restart bluetooth
+signal-desktop 
+redshift -l -45.31:122.40
+redshift -l 45.31:122.40
+docker --version
+docker run -d \
+  --name homeassistant \
+  --privileged \
+  --restart=unless-stopped \
+  -e TZ=MY_TIME_ZONE \
+  -v /PATH_TO_YOUR_CONFIG:/config \
+  --network=host \
+tmux
+vim
+nvim
+pwd
+signal-desktop 
+pip --version
+cd devel/
+mkdir walkingpad
+cd walkingpad/
+pip install -U ph4-walkingpad
+ph4-walkingpad-ctl --stats 750 --json-file ~/walking.json
+ph4-walkingpad-ctl --stats 750 --json-file ~/walking.json --scan
+ph4-walkingpad-ctl --stats 750 --json-file ~/walking.json
+ph4-walkingpad-ctl --stats 750 --json-file ~/walking.json --scan
+ph4-walkingpad-ctl --stats 750 --json-file ~/walking.json --address 0000fe00-0000-1000-8000-00805f9b34fb
+ph4-walkingpad-ctl --stats 750 --json-file ~/walking.json --address 57:4C:4D:26:23:92
+xfce4-screenshooter 
+cd ~/devel/CH341SER_LINUX/
+cat readme.txt
+make
+sudo make
+dmesg -w
+dmesg
+sudo dmesg -w
+xfce4-screenshooter 
+htop
+xfce4-screenshooter 
+signal-desktop 
+sudo systemctl start docker
+nvim /etc/bluetooth/main.conf
+sudo nvim /etc/bluetooth/main.conf
+sudo systemctl restart bluetooth
+sudo nvim /etc/bluetooth/main.conf
+nvim /etc/modprobe.d/btusb_disable_autosuspend.conf
+sudo nvim /etc/modprobe.d/btusb_disable_autosuspend.conf
+sudo update-initramfs -u
+signal-desktop 
+modinfo hid_apple
+grep MODULES -B 1 /etc/mkinitcpio.conf
+cat /etc/modprobe.d/btusb_disable_autosuspend.conf
+sudo nvim /etc/modprobe.d/btusb_disable_autosuspend.conf
+sudo update-initramfs -u
+sudo modprobe -r btusb
+sudo systemctl restart bluetooth
+sudo modprobe btusb
+ls
+cd devel/
+mkdir music
+cd music/
+vim game-winner-joey-dosik
+touch game-winner-joey-dosik
+vim game-winner-joey-dosik
+nvim game-winner-joey-dosik
+nvim ~/.xinitrc
+setxkbmap -option caps:escape
+nvim ~/.xsession-errors
+nvim ~/.xinitrc
+nvim /etc/bluetooth/main.conf
+sudo nvim /etc/bluetooth/main.conf
+sudo modprobe -r btusb
+sudo systemctl restart bluetooth
+sudo modprobe btusb
+setxkbmap -option caps:escape
+xfce4-screenshooter 
+signal-desktop 
+setxkbmap -option caps:escape
+htop
+setxkbmap -option caps:escape
+sudo systemctl restart bluetooth
+sudo systemctl status bluetooth.service
+sudo nvim /etc/bluetooth/main.conf
+tmux
+sudo nvim /etc/bluetooth/main.conf
+sudo systemctl restart bluetooth
+sudo systemctl status bluetooth.service
+sudo nvim /etc/bluetooth/main.conf
+sudo systemctl restart bluetooth
+sudo systemctl status bluetooth.service
+xfce4-screenshooter 
+nvim Downloads/-u9MuLm0.csv
+setxkbmap -option caps:escape
+nvim Downloads/-u9MuLm0.csv
+setxkbmap -option caps:escape
+nvim /etc/bluetooth/main.conf
+setxkbmap -option caps:escape
+signal-desktop 
+setxkbmap -option caps:escape
+cd ~/Downloads/
+ls
+sha256sum -c --ignore-missing release.sha256.txt
+setxkbmap -option caps:escape
+sudo systemctl start docker
+xfce4-screenshooter 
+signal-desktop 
+sudo systemctl start docker
+sudo mhwd-gpu --check
+nvim ~/.config/alacritty/alacritty.yml
+setxkbmap -option caps:escape
+alacritty -v
+xfce4-screenshooter 
+sudo systemctl start docker
+xfce4-screenshooter 
+htop
+grep "X Driver" /var/log/Xorg.0.log
+xfce4-screenshooter 
+sudo systemctl start docker
+xfce4-screenshooter 
+htop
+signal-desktop 
+xfce4-screenshooter 
+setxkbmap -option caps:escape
+xfce4-screenshooter 
+ls
+wget https://mullvad.net/media/mullvad-code-signing.asc
+gpg --import mullvad-code-signing.asc
+gpg --edit-key A1198702FC3E0A09A9AE5B75D5A1D4F266DE8DDF
+mullvad
+mullvad account login 7970 0755 2044 6718
+mullvad account login 7970075520446718
+mullvad account get
+mullvad account list-devices
+mullvad status
+mullvad connect
+mullvad status -v
+mullvad disconnect
+mullvad relay list
+mullvad relay set location us
+mullvad connect
+mullvad status -v
+htop
+ps aux | grep "openvpn"
+ps | grep "openvpn"
+mullvad status -v
+mullvad disconnect
+mullvad status -v
+openvpn --help
+mullvad disconnect
+mullvad lan set allow
+mullvad connect
+mullvad status -v
+signal-desktop 
+mullvad relay list
+mullvad relay list us
+mullvad relay list --help
+mullvad relay set location us sea
+mullvad status -v
+nvim .config/home-assistant/configuration.yaml
+setxkbmap -option caps:escape
+ls -la .config/home-assistant/configuration.yaml
+ls -la .config/home-assistant/
+sudo chmod o+w .config/home-assistant/configuration.yaml
+nvim .config/home-assistant/configuration.yaml
+wget -O - https://get.hacs.xyz | bash -
+cd .config/home-assistant/
+wget -O - https://get.hacs.xyz | bash -
+cd ../
+ls -la
+cd home-assistant/
+su root
+mullvad disconnect
+mullvad status
+mullvad status -v
+mullvad connect
+xfce4-screenshooter 
+mullvad connect
+mullvad status -v
+mullvad disconnect
+mullvad status -v
+xfce4-screenshooter 
+mullvad connect
+xfce4-screenshooter 
+signal-desktop 
+xfce4-screenshooter 
+sudo systemctl start docker
+cd /run/media/urho/f44346dc-3806-4d9c-ae39-d70eac33cdfb/home/jake/.config/
+sudo rm -r menus/
+xfce4-screenshooter 
+mullvad status -v
+mullvad disconnect
+mullvad connect
+mullvad status -v
+sudo systemctl start docker
+xfce4-screenshooter 
+nvim
+mullvad reconnect
+xfce4-screenshooter 
+setxkbmap -option caps:escape
+xfce4-screenshooter 
+cat dr-service-email
+ssh root@10.0.0.123
+nvim
+mullvad reconnect
+mullvad disconnect
+mullvad connect
+htop
+mullvad reconnect
+mullvad disconnect
+mullvad connect
+mullvad reconnect
+mullvad status -v
+mullvad disconnect
+mullvad connect
+cat dr-service-email
+cat Documents/dr-service-email
+xfce4-screenshooter 
+history | grep "mount"
+cd Documents/
+xfce4-screenshooter 
+mullvad disconnect
+xfce4-screenshooter 
+mullvad connect
+setxkbmap -option caps:escape
+ls
+cd Documents/
+cat dr-paul-email
+mullvad reconnect
+xfce4-screenshooter 
+nvim
+cat ~/.config/autostart/
+ls ~/.config/autostart/
+cat ~/.config/autostart/blueman.desktop
+cp /usr/share/applications/redshift.desktop ~/.config/autostart/
+cd ~/.config/autostart/
+vim redshift.desktop
+nvim redshift.desktop
+mullvad reconnect
+mullvad status -v
+bluetoothctl
+sudo systemctl restart bluetooth
+pulseaudio -k
+nvim /etc/bluetooth/main.conf
+sudo nvim /etc/bluetooth/main.conf
+sudo systemctl restart bluetooth
+bluetoothctl
+pactl info
+lsmod | grep bluetooth
+sudo systemctl start docker
+sudo pacman -Syu
+pacman -Ss pulseaudio-bluetooth
+modinfo btusb
+vim /etc/bluetooth/main.conf
+nvim /etc/bluetooth/main.conf
+systemctl status bluetooth.service
+systemctl status pulseaudio
+systemctl status pipewire
+ls /var/lib/bluetooth/
+sudo ls /var/lib/bluetooth/
+sudo ls /var/lib/bluetooth/A0:36:BC:D7:65:24
+systemctl status bluetooth.service
+sudo pacman -Syu pulseaudio-module-bluetooth
+sudo pacman -Syu pulseaudio-bluetooth
+sudo systemctl restart bluetooth
+cat /etc/pulse/default.pa
+nvim /etc/pulse/default.pa
+sudo nvim /etc/pulse/default.pa
+sudo systemctl restart pulseaudio
+sudo systemctl start pulseaudio
+systemtctl status pulseaudio
+systemctl status pulseaudio
+systemctl start pulseaudio
+systemctl --user start pulseaudio
+systemctl --user status pulseaudio
+systemctl --user restart pulseaudio
+systemctl --user status pulseaudio
+sudo nvim /etc/pulse/default.pa
+systemctl --user restart pulseaudio
+systemctl --user status pulseaudio
+systemctl status bluetooth.service
+sudo systemctl status bluetooth.service
+systemctl --user status pipewire
+load-module module-bluetooth-discover
+cat /etc/bluetooth/main.conf
+sudo pacman -Syu bluez
+systemctl --user status bluetooth
+sudo systemctl status bluetooth.service
+journalctl -xe
+sudo pacman -Syu pipewire-audio
+sudo pacman -Syu pipewire-pulse
+sudo pacman -Syu pulseaudio-bluetooth
+sudo killall pulseaudio
+pulseaudio --start
+sudo systemctl restart bluetooth.service
+journalctl -u bluetooth
+sudo nvim /etc/bluetooth/main.conf
+sudo systemctl restart bluetooth.service
+systemctl --user status pulseaudio
+systemctl --user enable pulseaudio
+systemctl --user start pulseauadio
+systemctl --user start pulseaudio
+sudo nvim /etc/pulse/default.pa
+sudo systemctl restart bluetooth.service
+sudo killall pulseaudio
+pulseaudio -k
+systemctl --user status pulseaudio
+systemctl --user restart pulseaudio
+sudo systemctl start docker
+xfce4-screenshooter 
+mullvad connect
+mullvad status -v
+xfce4-screenshooter 
+mullvad disconnect
+xfce4-screenshooter 
+cd devel/
+ls
+mkdir bash
+cd bash/
+nvim prevent_sleep_if_audio_playing.sh
+cd ~/.config/autostart/
+ls
+mv ~/devel/bash/prevent_sleep_if_audio_playing.sh .
+chmod +x prevent_sleep_if_audio_playing.sh
+xfconf-query -c xfce4-power-manager -lv
+pactl list sink-inputs | grep -c "State: RUNNING"
+pactl list sink-outputs | grep -c "State: RUNNING"
+pactl list source-outputs | grep -c "State: RUNNING"
+pactl list sink-inputs
+pactl list source-outputs
+pactl list sink-outputs
+pactl list sinks
+mullvad connect
+nvim prevent_sleep_if_audio_playing.sh
+./prevent_sleep_if_audio_playing.sh
+mullvad status -v
+sudo systemctl start docker
+xfce4-screenshooter 
+alacritty -vvv
+ls
+alacritty -vv
+pacman -Syu
+sudo pacman -Syu
+mullvad status -v
+mullvad reconnect
+vim
+nvim
+xfce4-screenshooter 
+routes
+mullvad reconnect
+xfce4-screenshooter 
+cd ~/.local/share/nvim/site/pack/
+setxkbmap -option caps:escape
+nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\<\n> ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+ls
+cd ~/.config/nvim/
+ls
+mv init.vim init-old.vim
+nvim .config/nvim/init.lua
+ls
+nvim .config/nvim/init.lua
+setxkbmap -option caps:escape
+cd Downloads/armbian/
+tar xvf Armbian_23.5.1_Rockpro64_bookworm_current_6.1.30_xfce_desktop.img.xz
+tar --help
+tar --version
+sudo pacman -Syu
+sudo pacman -Syu xz-utils
+sudo pacman -Syu xz
+xz --help
+xz -dv Armbian_23.5.1_Rockpro64_bookworm_current_6.1.30_xfce_desktop.img.xz
+cd ../
+xz -dv Armbian_23.5.1_Rockpro64_bookworm_current_6.1.30.img.xz
+xz -dv Manjaro-ARM-minimal-rockpro64-20230219.img.xz
+xz -dv u-boot-flash-spi-rockpro64.img.xz
+fdisk -l
+sudo fdisk -l
+fdisk /dev/sdd
+sudo fdisk /dev/sdd
+mullvad status
+sudo systemctl start docker
+mullvad disconnect
+mullvad connect
+mullvad disconnect
+mullvad status
+mullvad connect
+mullvad disconnect
+mullvad connect
+xfce4-screenshooter 
+sudo systemctl start docker
+setxkbmap -option caps:escape
+nvim .config/nvim/init.lua
+cd .config/nvim/
+ls
+mkdir -p lua/urho
+mkdir lua/urho
+setxkbmap -option caps:escape
+nu --version
+nu --help
+which nu
+cargo --help
+cargo install nu
+sudo pacman -Syu
+sudo systemctl start docker
+nvim .config/nu/config.toml
+setxkbmap -option caps:escape
+nvim .config/nushell/config.nu
+sudo pacman -Syu
+yay --help
+pamac --help
+pamac update -a
+setxkbmap -option caps:escape
+nvim
+cd .config/nvim/
+ls
+ls lua/
+ls
+cd lua/urho/
+ls
+nvim .config/nvim/init.lua
+ls
+rm century-link-return-label.pdf
+cat walking.json
+rm walking.json
+ls
+mv manjaro-awesomewm-sasquatch.tar.gz manjaro-ssd-backup.img backups/
+mv manjaro-awesomewm-sasquatch.tar.gz backups/
+mv manjaro-ssd-backup.img backups/
+ls
+nvim .
+cd .config/
+setxkbmap -option caps:escape
+nvim .
+mkdir nvim/after
+nvim .
+cd nvim/
+nvim init.lua
+cd .config/nvim/
+ls
+cd after/
+mkdir plugin
+cd ../
+ls
+cd after/
+ls
+mv gruvbox.lua lualine.lua toggleterm.lua plugin/
+mv *.lua plugin/
+ls
+nvim .
+ls
+cat plugin/
+ls plugin/
+cat plugin/packer_compiled.lua
+clear
+nvim .
+setxkbmap -option caps:escape
+nvim lua/urho/packer.lua
+nvim init.lua
+nvim .
+ls
+ls fter/plugin/
+nvim .
+setxkbmap -option caps:escape
+nvim .
+setxkbmap -option caps:escape
+setxkbmap --help
+man setxkbmap
+setxkbmap -option caps:escape
+nvim .
+rm init-old.vim
+ls
+nvim .
+nvim /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo nvim /etc/X11/xorg.conf.d/00-keyboard.conf
+nvim ~/.xinitrc
+nvim .
+man setxkbmap
+ls /usr/share/X11/xkb/keycodes/
+ls /usr/share/
+nvim .
+rg --help
+cargo --help
+rustup update
+rustc --version
+cargo --version
+cargo install rg
+cargo install ripgrep
+nvim .
+setxkbmap -option caps:escape
+nvim .
+keybindings default
+keybindings
+keybindings list
+keybindings default
+test
+test 
+nvim ~/.config/nushell/config.nu
+nvim .
+which nushell
+which nu
+ls -la .config/nu*
+nvim .config/nu/config.toml
+nvim .config/nushell/config.nu
+nvim .config/nvim/
+cd .config/nvim/
+nvim .
+cd ../nushell/
+ls
+ls -la
+nvim env.nu
+nvim ~/.config/nushell/config.nu
+lkajdlf;k;jaf
+adfaaf
+config
+config nu
+cd .config/nushell/
+nvim config.nu
+nu --version
+ls  
+nvim .config/nushell/config.nu
+config --help
+config reset
+nvim config.nu
+ls
+cd .config/
+ls
+ls nu/
+rm -r nu/
+cd nushell/
+nvim config.nu
+nvim env.nu
+nvim config.nu
+ls
+ls Library/
+ls
+cd .config/nushell/
+nvim env.nu
+nvim config.nu
+ls
+nvim
+setxkbmap -option caps:escape
+xfce4-screenshooter 
+setxkbmap -option caps:escape
+mhwd-kernel -li
+sudo pacman -Syu virtualbox linux61-virtualbox-host-modules
+sudo vboxreload
+sudo systemctl start docker
+vboxmanage --v
+vboxmanage -v
+pamac search virtualbox-ext-oracle
+pamac build virtualbox-ext-oracle
+sudo gpasswd -a $USER vboxusers
+sudo gpasswd -a $env.USER vboxusers
+cd devel/
+setxkbmap -option caps:escape
+./bulk-delete-gh-repos
+sudo chmod o+x ./bulk-delete-gh-repos
+./bulk-delete-gh-repos
+ls -la
+cd devel/
+./bulk-delete-gh-repos
+bash
+./bulk-delete-gh-repos
+cd Downloads/
+ls
+xfce4-screenshooter 
+cd ~
+history | grep "mount"
+bash
+sudo pacman -Syu
+nvim .xinitrc
+xfce4-screenshooter 
+vim ~/.xinitrc
+nvim .xinitrc
+nvim .xsession-errors
+nvim .xinitrc
+nvim .zshenv
+mullvad disconnect
+redshift -l 45.31:122.40
+sudo pacman -Syu
+mullvad connect
+vim .config/autostart/redshift.desktop
+setxkbmap -option caps:escape
+nvim .config/nushell/config.nu
+ls
+mv mullvad-code-signing.asc Documents/
+ls
+ls Downloads/
+mv Downloads/PaidInFullConfirmation_08-18-2023.pdf Documents/finance/
+mullvad reconnect
+mullvad disconnect
+mullvad connect
+sudo pacman -Syu awesome
+cat /etc/xdg/awesome/rc.lua
+mkdir .config/awesome
+cp /etc/xdg/awesome/rc.lua .config/awesome/
+ls .config/awesome/
+sudo pacman -Syu Xephyr
+sudo pacman -Syu xephyr
+sudo pacman -Syu xorg-server-xephyr
+Xephyr :1 -ac -br -noreset -screen 2560x1440 &
+Xephyr :1 -ac -br -noreset -screen 2560x1440
+DISPLAY=:1.0 awesome -c ~/.config/awesome/rc.lua
+tmux
+sudo pacman -Syu tmux
+sudo pacman -Syu zellij
+vim .
+cd .config/
+setxkbmap -option caps:escape
+DISPLAY=:1.0 awesome -c ~/.config/awesome/rc.lua
+nvim .
+acpi
+Xephyr :1 -ac -br -noreset -screen 2560x1440
+xfce4-screenshooter 
+pamac search aawmtt
+pamac help
+pamac install aawmtt
+exit
+exit
+zellij 
+cd .config/
+setxkbmap -option caps:escape
+nvim .
+tmux
+sudo pacman -Syu tmux
+nvim .
+ls 
+ssh -Tv git@github.com
+cat ~/.ssh/known_hosts
+ssh -Tv git@github.com
+cat ~/.ssh/known_hosts
+nvim ~/.ssh/known_hosts
+ssh -Tv git@github.com
+cat ~/.ssh/id_rsa.pub
+ssh-keygen -t ed25519 -C "jake.goldsborough@pm.me"
+cat ~/.ssh/id_ed25519.pub
+ssh -Tv git@github.com
+ls
+rm -r awesome/
+git clone --recurse-submodels git@github.com:ducks/awesome.git
+git clone --recurse-submodules git@github.com:ducks/awesome.git
+cd awesome/
+git status
+aawmtt 
+pamac install luarocks
+luarocks install freedesktop
+sudo luarocks install freedesktop
+sudo luarocks install awesome-freedesktop
+setxkbmap -option caps:escape
+cd awesome/
+git diff
+setxkbmap -option caps:escape
+git status
+git restore themes/gruvbox-squares/README
+git diff
+git status
+git commit -am "commenting out freedesktop for now"
+git diff
+git commit -am "fixing theme path"
+git commit -am "removing old image attribution"
+git status
+git push
+ls
+sudo pacman -Syu helix
+helix
+setxkbmap -option caps:escape
+helix
+sudo pacman -Syu
+setxkbmap -option caps:escape
+nvim rc.lua
+checkupdates 
+mullvad connect
+mullvad status
+mullvad disconnect
+mullvad connect
+neofetch
+cd ~/Documents/
+ls
+cd ../Pictures/
+ls
+xfce4-screenshooter 
+checkupdates 
+mullvad connect
+mullvad status
+dmesg
+sudo dmesg
+journalctl -u bluetooth
+sudo systemctl status bluetooth.service
+journalctl -u bluetooth
+sudo dmesg
+sudo systemctl start docker
+sudo systemctl enable docker
+xfce4-screenshooter 
+signal-desktop 
+sudo nvim /etc/hosts
+setxkbmap -option caps:escape
+xfce4-screenshooter 
+cd Music/
+ls
+ls `Todd Snider/`
+mullvad status
+mullvad reconnect
+xfce4-screenshooter 
+htop
+mullvad reconnect
+sudo pacman -Syu
+signal-desktop 
+sudo reboot now
+mullvad reconnect
+mullvad status
+xfce4-screenshooter 
+uname -r
+signal-desktop 
+sudo pacman -Syu brave-browser
+sudo pacman -Syu
+setxkbmap -option caps:escape
+nvim .config/nushell/env.nu
+mullvad reconnect
+sudo pacman -Syu
+mullvad disconnect
+mullvad connect
+sudo pacman -Syu
+mullvad status
+mullvad reconnect
+sudo pacman -Syu
+htop
+mullvad disconnect
+xfce4-screenshooter 
+journalctl -u bluetooth
+xfce4-screenshooter 
+xcape --help
+help xcape
+man xcape
+grep -r "xcape" .config/
+nvim .config/autostart/xcape.desktop
+rm .config/autostart/xcape.desktop
+ls .config/autostart/
+htop
+lspci -k | grep -A 2 -E "(VGA|3D)"
+htop
+rofi
+journalctl -u bluetooth
+systemctl status bluetooth.service
+sudo pacman -Syu
+htop
+cd Documents/
+ls
+setxkbmap -option caps:escape
+nvim
+cat portland-arboriculture-email
+xfce4-screenshooter 
+mullvad connect
+mullvad status
+setxkbmap -option caps:escape
+nvim
+mullvad reconnect
+mullvad disconnect
+mullvad connect
+setxkbmap -option caps:escape
+nvim
+mullvad disc
+mullvad disconnect
+xfce4-screenshooter 
+mullvad connect
+mullvad disconnect
+mullvad connect
+cd devel/
+ls
+setxkbmap -option caps:escape
+nvim .
+nvim
+cd ../
+cd .config/
+cd nvim/
+nvim .
+nvim 
+nvim .
+setxkbmap -option caps:escape
+nvm use lts
+setxkbmap -option caps:escape
+nvim .
+git status
+git diff
+signal-desktop 
+nvim ~/.config/nvim/init.lua
+nvim ~/.config/nvim/
+setxkbmap -option caps:escape
+nvim ~/.config/nvim/
+cd ~/.config/
+git status
+cd nvim/
+ls
+git sattus
+git status
+git info
+git user
+git --help
+ls
+git init
+git branch -m main
+git remote add origin git@github.com:ducks/nvim.git
+git status
+ls -la
+git add after/ init.lua lua/ plugin/
+git commit -am "adding nvim config files"
+git push -u origin main
+rg "urho"
+ls
+ls lua/
+mv lua/urho/ lua/user
+git status
+str replace 'urho' 'user'
+git status
+git diff
+git status
+cd lua/
+git status
+cd urho
+git restore urho
+git status
+ls
+rm -r user/
+cd ../
+nvim .
+git status
+ls ~/.local/share/nvim/site/
+ls ~/.local/share/nvim/site/pack/
+ls
+nvim init.lua
+ls plugin/
+pamac checkupdates -a
+pamac upgrade -a
+mullvad connect
+mullvad status
+pamac upgrade -a
+pamac upgrade
+mullvad status
+sudo nvim /etc/hosts
+mullvad status
+ls
+git status
+setxkbmap -option caps:escape
+nvim lua/urho/init.lua
+git status
+npm start
+pamac upgrade -a
+pamac remove virtualbox-ext-oracle
+pamac upgrade -a
+cmus
+pamac install cmus
+xfce4-screenshooter 
+pamac upgrade -a
+sudo nvim /etc/hosts
+mullvad disconnect
+mullvad connect
+sudo nvim /etc/hosts
+mullvad status
+mullvad disconnect
+mullvad connect
+signal-desktop 
+htop
+cd devel/
+ls
+ls scripts/
+cd scripts/
+setxkbmap -option caps:escape
+nvim swap_caps_escape.sh
+chmod +x swap_caps_escape.sh
+pwd
+/home/urho/devel/scripts/swap_caps_escape.sh
+lsusb
+hciconfig
+cat /etc/X11/xorg.conf.d/00-keyboard.conf
+lsusb
+htop
+systemctl status bluetooth.service
+lsusb | grep bluetooth -i
+lsusb
+bluetoothctl --help
+bluetoothctl list
+bluetoothctl info
+cat /etc/bluetooth/main.conf
+nvim /etc/bluetooth/main.conf
+cat devel/scripts/swap_caps_escape.sh
+lsusb
+setxkbmap -option caps:escape
+nvim /etc/udev/rules.d/92-keyboard-remap-wakeup.rules
+sudo nvim /etc/udev/rules.d/92-keyboard-remap-wakeup.rules
+cd devel/
+ls /usr/local/bin/
+ln -s scripts/swap_caps_escape.sh /usr/local/bin/swap_caps_escape.sh
+lsusb
+udevadm control --reload
+sudo udevadm control --reload
+udevadm info --attribute-walk --name=/dev/usb
+cat /dev/usb/
+ls /dev/usb/
+systemctl status bluetooth.service
+lsusb
+ls devel/scripts/
+chmod +x devel/scripts/swap_caps_escape.sh
+ls -la devel/scripts/
+sudo nvim /etc/udev/rules.d/92-keyboard-remap-wakeup.rules
+sudo nvim /etc/udev/rules.d/92-keyboard-remap-wakeup.rules
+xmodmap -pke
+xmodmap -pm
+xmodmap -pke
+pavucontrol 
+cat /var/log/Xorg.0.log
+sudo nvim /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo systemctl restart udev
+systemctl restart systemd-udevd.service
+setxkbmap -option caps:escape
+sudo udevadm control --reload
+systemctl restart systemd-udevd.service
+udevadm monitor
+cat /var/log/Xorg.0.log
+udevadm info -a -p $(udevadm info -q path -n /dev/input/event3)
+bash
+cat /var/log/Xorg.0.log
+cat /var/log/Xorg.0.log
+sudo nvim /etc/X11/xorg.conf.d/00-keyboard.conf
+cat /var/log/Xorg.0.log
+localectl --no-convert set-x11-keymap us pc104 "" caps:swapescape
+cat /etc/X11/xorg.conf.d/00-keyboard.conf
+bash
+udevadm monitor
+setxkbmap -option caps:escape
+sudo nvim /etc/udev/rules.d/80-keychron.rules
+sudo rm /etc/udev/rules.d/92-keyboard-remap-wakeup.rules
+sudo udevadm control --reload-rules && sudo udevadm trigger
+sudo udevadm control --reload-rules; sudo udevadm trigger
+udevadm monitor\
+cat /var/log/Xorg.0.log
+udevadm monitor
+nvim scripts/swap_caps_escape.sh
+sudo udevadm control --reload-rules; sudo udevadm trigger
+sudo udevadm control --reload; sudo udevadm trigger
+cat /usr/lib/udev/rules.d/70-mouse.rules
+udevadm info -a -p $(udevadm info -q path -n /dev/input/event3)
+bash
+setxkbmap -option caps:escape
+sudo udevadm control --reload; sudo udevadm trigger
+ls scripts/
+cat scripts/k10-test
+sudo nvim /etc/udev/rules.d/80-keychron.rules
+nvim scripts/swap_caps_escape.sh
+cat scripts/k10-test
+sudo nvim /etc/udev/rules.d/80-keychron.rules
+setxkbmap -option caps:escape
+sudo udevadm control --reload; sudo udevadm trigger
+cat scripts/k10-test
+cat devel/scripts/k10-test
+cat /etc/X11/xorg.conf.d/00-keyboard.conf
+localectl --no-convert set-x11-keymap us pc104 "" caps:escape
+udevadm monitor
+setxkbmap -option caps:escape
+sudo nvim /etc/udev/rules.d/80-keychron.rules
+sudo udevadm control --reload; sudo udevadm trigger
+cat devel/scripts/k10-test
+udevadm monitor
+bluetoothctl info
+bash
+localectl set-x11-keymap --help
+localectl list-x11-keymap-layouts
+localectl list-x11-keymap-options
+localectl set-x11-keymap --help
+localectl list-x11-keymap-models
+dconf-editor
+localectl
+sudo nvim /etc/udev/rules.d/80-keychron.rules
+cat /lib/udev/rules.d/97-hid2hci.rules
+cat /etc/default/keyboard
+rg "xorg-xkb" /lib/udev/rules.d/
+nvim devel/scripts/swap_caps_escape.sh
+sudo udevadm control --reload; sudo udevadm trigger
+cat devel/scripts/k10-test
+nvim devel/scripts/swap_caps_escape.sh
+sudo udevadm control --reload; sudo udevadm trigger
+nvim devel/scripts/swap_caps_escape.sh
+udevadm info -a -p $(udevadm info -q path -n /dev/input/event3)
+bluetoothctl info
+sudo udevadm control --reload; sudo udevadm trigger
+cat /etc/udev/rules.d/80-keychron.rules
+cat devel/scripts/swap_caps_escape.sh
+nvim devel/scripts/swap_caps_escape.sh
+cat devel/scripts/swap_caps_escape.sh
+mullvad status
+mullvad reconnect
+mullvad status
+udevadm info -a -p (udevadm info -q path -n /dev/input/event3)
+xfce4-screenshooter 
+mullvad status
+runlevel
+mullvad status
+mullvad disconnect
+mullvad connect
+mullvad status
+mullvad disconnect
+mullvad status
+sudo systemctl start docker
+systemctl status
+cat /var/log/Xorg.0.log
+sudo reboot now
+sudo nvim /etc/fstab
+journalctl --help
+journalctl -xe
+journalctl -x
+journalctl -xe
+sudo reboot now
+mullvad status
+mullvad reconnect
+history
+cat /etc/udev/rules.d/80-keychron.rules
+cat /etc/X11/xorg.conf.d/00-keyboard.conf
+udevadm info -a -p $(udevadm info -q path -n /dev/input/event3)
+udevadm info -a -p (udevadm info -q path -n /dev/input/event3)
+ln --help
+sudo find / -type l
+mhwd -li
+ls devel/scripts/
+ls -la devel/scripts/
+journalctl -x -b 1
+journalctl -xe -b 1
+journalctl -xe
+mhwd -l -li
+journalctl --system --boot=1 | tail --lines=100
+journalctl --system --boot=1
+journalctl --system --boot=1 > tail --lines=100
+journalctl --system --boot=1 | tail --lines=100
+journalctl -p3 -b -1
+cat /etc/fstab
+blkid
+sudo blkid
+cat /var/log/Xorg.0.log
+cat /var/log/mullvad-vpn/daemon.log
+dmesg
+sudo dmesg
+cat /var/log/Xorg.0.log | grep -iE 'failed|warning'
+inxi -G
+cat /var/log/lxdm.log
+sudo cat /var/log/lxdm.log
+startx --help
+startx
+cat /var/log/Xorg.1.log
+startx
+cat /etc/X11/xorg.conf
+cat /var/log/Xorg.0.log
+cat /var/log/Xorg.2.log
+startx -- -logverbose 6
+startx
+cat .xinitrc
+cat .profile
+nvim .profile
+ls
+cat xorg.conf
+cat /etc/X11/xorg.conf.d/90-mhwd.conf
+cat /etc/X11/xorg.conf.d/00-keyboard.conf
+systemctl status
+systemctl --help
+systemctl list-unit-files
+cat /var/log/Xorg.2.log
+startx
+cat .xsession-errors
+pamac checkupdates -a
+pamac upgrade -a
+pamac search nvidia
+mhwd -l -li
+sudo reboot now
+alacritty migrate
+mhwd-kernel -li
+mhwd-kernel -l
+sudo mhwd-kernel -i linux66
+cat /var/log/Xorg.0.log
+journalctl -p3 -b -1
+cat /etc/profile
+test $BASH
+test "$BASH"
+cat .profile
+cat .bashrc
+cat .xinitrc
+journalctl -xe
+inxi --admin --verbosity=7 --filter --no-host --width
+startxfce4 
+rm /tmp/.X0-lock
+sudo rm /tmp/.X0-lock
+startxfce4 
+startx
+cat /var/log/Xorg.0.log
+startx
+startxfce4 
+sudo reboot now
+ls
+ls -la
+cat .xsession-errors
+startxfce4 
+exit
+tmux
+cat .xsession-errors
+rg "swap_caps_escape" /
+systemctl --failed
+journalctl -xe
+systemctl --help
+journalctl --help
+journalctl --user
+journalctl --user -e
+systemctl status lightdm
+systemctl status lxde
+journalctl -b -1
+udevadm monitor
+cat /lib/udev/rules.d/80-libinput-device-groups.rules
+ls /etc/udev/
+ls /etc/udev/rules.d/
+cat /etc/udev/udev.conf
+nvim /etc/udev/udev.conf
+setxkbmap -option caps:escape
+sudo nvim /etc/udev/udev.conf
+reload udev
+udev --help
+udevadm monitor --property
+cat .xsession-errors
+cat .xsession-errors.old
+ldconfig --help
+ldconfig -v
+journalctl -xe
+journalctl -p err..alert
+journalctl -p err..alert -e
+journalctl --help
+journalctl -p err..alert -r
+ls .config/autostart/
+cat `.config/autostart/swap caps and esc.desktop`
+rg swap_caps_escape
+rg swap_caps_escape .config/
+rm `.config/autostart/swap caps and esc.desktop`
+nvim devel/scripts/swap_caps_escape.sh
+cat /etc/X11/mhwd.d/nvidia.conf
+cat /etc/X11/xorg.conf.d/00-keyboard.conf
+cat /etc/X11/xorg.conf.d/90-mhwd.conf
+ls /usr/local/bin/
+ls -la /usr/local/bin/
+dconf-editor
+$dconf-editor
+$(dconf-editor)
+setxkbmap -option caps:escape
+sudo udevadm control --reload; sudo udevadm trigger
+udevadm info -a -p (udevadm info -q path -n /dev/input/event3)
+udevadm monitor
+udevadm info --attribute-walk --name=/dev/usb
+ls /dev/usb/
+udevadm info --attribute-walk --name=/dev/usb/
+cat /var/log/Xorg.0.log
+nvim .bash_history
+sudo nvim /etc/X11/xorg.conf.d/00-keyboard.conf
+setxkbmap -option caps:escape
+pamac upgrade -a
+journalctl --priority=warning..err --boot=-1 --no-pager
+cat /var/log/Xorg.1.log
+journalctl --boot=-1 --unit=lightdm.service --no-pager
+dmesg --level=err
+sudo dmesg
+sudo dmesg --level=err
+pamac list -i | grep -i nvidia
+mhwd -l -d --pci
+pamac list -i | grep -i nvidia
+sudo dmesg --level=err
+cat /etc/mkinitcpio.conf
+lspci -k | grep -A 2 -E "(VGA|3D)"
+cat .nvidia-settings-rc
+sudo dmesg --level=err
+mkinitcpio -P
+sudo mkinitcpio -P
+cat /tmp/
+ls /tmp/
+sudo systemctl restart bluetooth
+pactl list sinks short
+mullvad status
+xfce4-screenshooter 
+sudo reboot now
+pamac upgrade -a
+sudo reboot now
+journalctl -p3 -b -1
+inxi --admin --verbosity=7 --filter --no-host --width
+sudo ldconfig
+ls .config/X11/
+ls .config/
+ls -la
+cat .xsession-errors
+ls -la
+cat .xinitrc
+cat .Xmodmap
+sudo systemctl status lightdm 
+sudo systemctl status lightdm-gtk-greeter 
+pamac --help
+pamac search awesome
+ls /mnt/
+ls /mnt/manjaro-ssd/
+ls
+cat xorg.conf
+cat xorg.conf.backup
+cat /usr/local/bin/
+ls /usr/local/bin/
+ls
+ls backups/
+ls -la
+cat .Xclients
+cat .xinitrc
+cat /etc/X11/xinit/xinitrc.d/
+ls /etc/X11/xinit/xinitrc.d/
+cat /etc/X11/xinit/xinitrc.d/80xapp-gtk3-module.sh
+cat /etc/udev/iocost.conf
+cat /etc/udev/udev.conf
+cat /etc/udev/rules.d/
+ls /etc/udev/rules.d/
+cat /etc/X11/xorg.conf
+cat /etc/X11/xorg.conf.d/00-keyboard.conf
+localectl list-x11-keymap-models
+history | grep "localectl"
+localectl set-x11-keymap --help
+ls /tmp/
+ls /tmp/qipc_sharedmemory_MSMNotifier1982c3c75cbed4786bc185973fce6242a7b208b8
+cat /tmp/qipc_sharedmemory_MSMNotifier1982c3c75cbed4786bc185973fce6242a7b208b8
+journalctl --priority=warning..err --boot=-1 --no-pager
+ls devel/
+ls devel/scripts/
+cat devel/scripts/k10-test
+systemctl status
+sudo journalctl -p3 -b -1
+cat /var/log/Xorg.0.log
+udevadm control --reload
+sudo udevadm control --reload
+udevadm trigger
+sudo udevadm trigger
+lsusb
+ls /dev/input/by-id/usb-Keychron_Keychron_K10-event-kbd
+cat /dev/input/by-id/usb-Keychron_Keychron_K10-event-kbd
+udevadm info --attribute-walk --name=/dev/input/by-id/usb-Keychron_Keychron_K10-event-kbd
+ls -la /usr/local/bin/ | grep ^l
+ls -la /usr/local/bin/ | grep "\->"
+ls -la /usr/local/bin/
+ls devel/s
+ls devel/scripts/
+find /usr/local/bin/ -type l -ls
+find /usr/local/bin/ 
+ls -la /usr/local/bin/
+ls --help
+ls -la /usr/local/bin/ | where type == link
+cat /etc/X11/xorg.conf.d/00-keyboard.conf
+rg "xorg-xkb" /lib/udev/rules.d/
+cat /etc/default/keyboard
+cat /etc/fstab
+journalctl -x -b 1
+journalctl -xe -b 1
+sudo systemctl status nvidia-suspend.service
+sudo systemctl status nvidia-sleep
+sudo systemctl status nvidia-resume
+sudo reboot now
+sudo systemctl status lightdm
+sudo systemctl status xorg
+sudo systemctl status xfwm4 
+sudo systemctl status list
+systemctl --help
+systemctl list-units
+sudo systemctl status graphical.target
+sudo systemctl status bluetooth.service
+journalctl -xe -b 1
+journalctl --priority=warning..err --boot=-1 --no-pager
+cat .xsession-errors
+cat /var/log/Xorg.0.log
+journalctl -b -1 -p4 --no-pager
+sudo systemctl status xdg-desktop-portal-gtk
+systemctl list-units
+sudo systemctl status systemd-udevd
+sudo systemctl status upower
+sudo systemctl status systemd-logind
+sudo systemctl status watchdog
+sudo systemctl status mullvad-daemon
+dmesg --level=err
+sudo dmesg --level=err
+sudo dmesg
+journalctl -b -1 -p4 --no-pager
+journalctl --priority=warning..err --boot=-1 --no-pager
+journalctl 
+history | grep "journalctl"
+journalctl -xe -b 1
+journalctl -xe -b 2
+journalctl -xe
+pacman -Qs xdg-desktop
+journalctl --boot=-1 --unit=lightdm.service --no-pager
+journalctl --boot=-1 --unit=lightdm.service --no-pager --priority=warning..err
+cat /var/log/Xorg.1.log
+cat .config/xfce4/xfconf/xfce-perchannel-xml/displays.xml
+rm .config/xfce4/xfconf/xfce-perchannel-xml/displays.xml
+sudo systemctl status lightdm
+sudo systemctl restart lightdm
+pamac upgrade -a
+htop
+nvim .config/awesome/themes/gruvbox-squares/theme.lua
+setxkbmap -option caps:escape
+nvim .config/awesome/rc.lua
+cd .config/awesome/
+git status
+git submodule update
+ls
+git submodule init
+ls
+git diff
+nvim .gitmodules
+git restore .gitmodules
+git submodule --help
+git submodules add --name freedesktop https://github.com/lcpz/awesome-freedesktop.git
+git submodule add --name freedesktop https://github.com/lcpz/awesome-freedesktop.git
+git diff
+git status
+rm -r awesome-freedesktop/
+git restore .gitmodules
+git submodule add --path freedesktop https://github.com/lcpz/awesome-freedesktop.git
+git submodule --help
+git submodule add https://github.com/lcpz/awesome-freedesktop.git freedesktop
+ls
+ls -la
+ls .git/
+ls .git/modules/
+ls
+git submodule add https://github.com/lcpz/awesome-freedesktop.git freedesktop --force
+git submodule add -f https://github.com/lcpz/awesome-freedesktop.git freedesktop
+ls
+sudo systemctl status display-manager
+pamac --help
+pamac install lemurs
+sudo systemctl disable display-manager
+sudo systemctl enable lemurs
+cd ~
+cat .xinitrc
+cat /etc/X11/xinit/xinitrc
+ls /etc/lemurs/
+mkdir /etc/lemurs/wms
+sudo mkdir /etc/lemurs/wms
+sudo cp .xinitrc /etc/lemurs/wms
+cd /etc/lemurs/wms/
+ls
+ls -la
+awesome --help
+exec --help
+cat .xinitrc
+sudo nvim awesome
+sudo chmod +x awesome 
+lemurs --preview
+cd ../../
+ls -la
+htop
+setxkbmap -print -verbose 10
+cat /etc/X11/xorg.conf.d/00-keyboard.conf
+cat /usr/share/X11/xkb/rules/evdev.xml
+htop
+xfce4-screenshooter 
+mullvad status
+systemctl suspend --help
+xautolock --help
+pamac install xautolock
+xautolock --help
+xlock --help
+xfce4-screenshooter 
+cd .config/awesome/
+ls
+setxkbmap -print -verbose 10
+setxkbmap -option caps:escape
+bluetoothctl
+systemctl restart bluetooth
+systemctl status bluetooth
+bluetooth 
+bluetooth --help
+man bluetooth
+bluetooth on
+bluetoothctl
+man bluetooth
+cat /etc/bluetooth/main.conf
+systemctl status bluetooth
+xmodmap -pke
+cat .xinitrc
+xmodmap -pm
+xmodmap .Xmodmap
+xmodmap -pm
+setxkbmap -option caps:escape
+xmodmap .Xmodmap
+xmodmap -pm
+cat /etc/X11/xorg.conf.d/00-keyboard.conf
+rg "caps" /usr/share/X11/xkb/rules/
+xmodmap -pm
+nvim .Xmodmap
+setxkbmap -option caps:escape
+setxkbmap -option caps:swapescape
+pamac install keyd
+sudo systemctl start keyd
+sudo systemctl enable keyd
+nvim /etc/keyd/default.conf
+setxkbmap -option caps:escape
+sudo nvim /etc/keyd/default.conf
+sudo keyd reload
+systemctl status --user bluetooth
+keyd monitor
+sudo journalctl -eu keyd
+sudo nvim /etc/keyd/default.conf
+sudo keyd reload
+sudo journalctl -eu keyd
+sudo systemctl enable bluetooth
+sudo systemctl status bluetooth.service
+tlp --help
+man tlp
+systemctl status tlp
+tlp-stat
+sudo tlp-stat
+cat /etc/tlp.conf
+nvim /etc/tlp.conf
+sudo nvim /etc/tlp.conf
+sudo systemctl restart tlp
+systemctl status keyd
+htop
+pkill x
+tmux
+sudo pkill x
+htop
+sudo reboot now
+systemctl status keyd
+nvim
+htop
+sensors
+sudo systemctl stop keyd
+setxkbmap -option caps:escape
+brave 
+pamac upgrade -a
+systemctl status keyd
+bluetooth
+systemctl status bluetooth
+bluetoothctl
+bluetooth
+journalctl --help
+bluetooth on
+bluetoothctl
+journalctl --help
+journalctl -xe
+setxkbmap -option caps:escape
+systemctl status keyd
+cat .Xmodmap
+cat /etc/default/keyboard
+cat /etc/X11/xorg.conf.d/00-keyboard.conf
+localectl --no-convert set-x11-keymap us pc104 "" caps:swapescape
+cat /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo systemctl stop keyd
+sudo systemctl disable keyd
+cat .xsession-errors
+journalctl -xe
+cat .xsession-errors
+cat /var/log/Xorg.0.log
+exit
+brave --version
+brave --help
+man brave
+cat .config/BraveSoftware/
+cat `.config/BraveSoftware/Brave-Browser/Crash Reports/`
+systemctl status docker
+sudo systemctl restart docker
+brave
+which brave
+pamac upgrade -a
+ls /root
+mullvad status
+journalctl -xe
+cat /var/log/Xorg.1.log
+cat /etc/X11/xorg.conf.d/00-keyboard.conf
+history | grep "keyboard"
+cat /etc/default/keyboard
+setxkbmap -option caps:swapescape
+sudo nvim /etc/default/keyboard
+systemctl status keyd
+sudo dmesg
+sudo journalctl -eu brave
+systemctl status brave
+brave --help
+brave --verbose
+pamac search brave
+nvim .Xmodmap
+cat .xsession-errors
+brave --use-gl=desktop
+brave --use-gl=egl
+brave --enable-gpu=false
+brave --enable-gpu=0
+brave --disable-gpu
+cat .config/BraveSoftware/Brave-Browser/chrome_debug.log
+ls .config/BraveSoftware/Brave-Browser/mfddibmblmbccpadfndgakiopmmhebop/
+cat .config/BraveSoftware/Brave-Browser/mfddibmblmbccpadfndgakiopmmhebop/
+cat .config/BraveSoftware/Brave-Browser/mfddibmblmbccpadfndgakiopmmhebop/1.0.83/manifest.json
+brave --enable-logging
+brave --disable-extensions
+mhwd-kernel -l
+mhwd-kernel -li
+brave --disable-extensions --enable-logging --disable-gpu
+cd .config/
+mv BraveSoftware/ BraveSoftware-bak
+brave --enable-logging
+pamac install brave-browser
+pamac --help
+pamac reinstall brave-browser
+brave --enable-logging
+pamac remove brave-browser
+pamac install brave-bin
+htop
+brave --enable-logging
+awesome-client --help
+man awesome-client
+awesome-client 'client.get()'
+awesome-client 'client:get'
+awesome-client 'client:get()'
+awesome-client 'client:get(1)'
+awesome-client 'client:get(0)'
+awesome-client 'client.get(1)'
+awesome-client 'client.get(2)'
+awesome-client 'client.get(0)'
+awesome-client 'client.get(3)'
+awesome-client 'client.get()'
+awesome-client
+ls -l /proc/$(pidof awesome)/fd/2
+ls -l /proc/(pidof awesome)/fd/2
+cat /proc/1459/fd/2
+sudo cat /proc/1459/fd/2
+ls /proc/1459/fd/2
+ls -la /proc/1459/fd/2
+tail -f /proc/1459/fd/2
+brave --enable-logging
+awesome-client 'mouse.screen.selected_tag:clients()'
+man awesome-client
+awesome-client 'return mouse.screen.selected_tag:clients()'
+awesome-client 'return client.get()'
+sudo tail -f /proc/1459/fd/2
+awesome-client 'return print client.get()'
+awesome-client 'return ipairs(client.get())'
+awesome-client
+awesome-client '<\n>local c = client.get()<\n>for _, c in ipairs(c) do<\n>print _<\n>print c<\n>end<\n>'
+awesome-client '<\n>local c = client.get()<\n>for k, v in pairs(c) do<\n>  print (_, c)<\n>end<\n>'
+awesome-client '<\n>local c = client.get()<\n>for k, v in pairs(c) do<\n>  print (k, v)<\n>end<\n>'
+awesome-client '<\n>local c = client.get()<\n>for k, v in ipairs(c) do<\n>  print (k, v)<\n>end<\n>'
+awesome-client '<\n>local c = client.get()<\n>for k, v in ipairs(c) do<\n>print (k, v)<\n>end<\n>'
+awesome-client '<\n>local c = client.get()<\n>for k, v in ipairs(c) do<\n>print(k, v)<\n>end<\n>'
+awesome-client 'client.get()'
+awesome-client '<\n>local c = return client.get()<\n>for k, v in ipairs(c) do<\n>print(k, v)<\n>end<\n>'
+awesome-client '<\n>local c = client:get()<\n>for k, v in ipairs(c) do<\n>print(k, v)<\n>end<\n>'
+awesome-client '<\n>local c = client:get(1)<\n>for k, v in ipairs(c) do<\n>print(k, v)<\n>end<\n>'
+awesome-client '<\n>local c = client.get(1)<\n>for k, v in ipairs(c) do<\n>print(k, v)<\n>end<\n>'
+awesome-client '<\n>local c = client.get(1)<\n>for k, v in ipairs(c) do<\n>return print(k, v)<\n>end<\n>'
+awesome-client '<\n>local c = client.get(1)<\n>return for k, v in ipairs(c) do<\n>print(k, v)<\n>end<\n>'
+awesome-client '<\n>for k, v in ipairs(client.get()) do<\n>print(k, v)<\n>end<\n>'
+awesome-client 'return ipairs(client.get())'
+awesome-client 'return screen:instances()'
+awesome-client 'return screen:count()'
+awesome-client 'return screen:get_all_clients()'
+awesome-client 'return screen:get_clients()'
+awesome-client '<\n>for s in screen:screen() do<\n>print(s.get_all_clients())<\n>end<\n>'
+awesome-client '<\n>local screens = screen:screen()<\n>for s in screens do<\n>print(s)<\n>end' 
+awesome-client 'return screen:screen()'
+awesome-client 'return screen:count()'
+awesome-client 'return screen:screen'
+awesome-client '<\n>local screens = screen:screen<\n>for s in screens do<\n>print(s)<\n>end' 
+awesome-client 'return tag:selected()'
+awesome-client 'return awful.screen.focused().selected_tag'
+xprop
+xprop firefox
+xprop --help
+xprop -name firefox
+xprop
+setxkbmap -option caps:swapescape
+setxkbmap -option caps:escape
+setxkbmap --help
+setxkbmap -print -verbose 10
+setxkbmap -option
+setxkbmap -print -verbose 10
+setxkbmap -option caps:escape
+sudo nvim /etc/default/keyboard
+localectl --no-convert set-x11-keymap us pc104 "" caps:escape
+mullvad status
+cd .config/nvim/
+ls
+nvim after/plugin/lsp.lua
+nvim lua/urho/options.lua
+exit
+cd .config/nvim
+nvim lua/urho/options.lua
+cd ../
+nvim nushell/config.nu
+exit
+cd .config/
+mv BraveSoftware-bak/ BraveSoftware/
+ls
+cat BraveSoftware/
+ls BraveSoftware/
+mv BraveSoftware/BraveSoftware-bak/ ../
+ls
+ls BraveSoftware
+mv ../BraveSoftware-bak/ ./
+rm BraveSoftware/
+rm -r BraveSoftware/
+mv BraveSoftware-bak/ BraveSoftware
+ls BraveSoftware/
+pamac uninstall brave-bin
+pamac remove brave-bin
+pamac install brave-browser
+brave --enable-extensions
+ls BraveSoftware/
+cat BraveSoftware/Brave-Browser/afalakplffnnnlkncjhbmahjfjhmlkal/1.0.578/manifest.json
+cat BraveSoftware/Brave-Browser/iodkpdagapdfkphljnddpjlldadblomo/1.0.3456/manifest.json
+cat `BraveSoftware/Brave-Browser/Local State`
+ls BraveSoftware/
+rg "bitwarden" BraveSoftware/
+ls -la BraveSoftware/
+cd BraveSoftware/
+ls
+cd Brave-Browser/
+ls
+cat chrome_debug.log
+ls Default/
+ls
+cat `Last Version`
+cat `Local State`
+ls
+cat adcocjohghhfpidemphmcmlmhnfgikei/1.0.68/list.txt
+cat adcocjohghhfpidemphmcmlmhnfgikei/1.0.68/manifest.json
+ls
+ls `Webstore Downloads/`
+cat afalakplffnnnlkncjhbmahjfjhmlkal/1.0.578/manifest.json
+cat aoojcmojmmcbpfgoecoadbdpnagfchel/1.0.12/manifest.json
+cat bfpgedeaaibpoidldhjcknekahbikncb/1.0.3760/manifest.json
+cat `Local State`
+rg "comms" .
+ls Default/Extensions/
+ls `Default/Extension State/`
+cat `Default/Extension State/000200.ldb`
+ls Default/
+cd Default/
+cat Preferences
+ls `Extension Rules/`
+ls Extensions/
+ls `Extension Scripts/`
+ls `Extension State/`
+cat `Extension State/CURRENT`
+cat `Extension State/MANIFEST-000001`
+nvim awesome/rc.lua
+cd ../
+cat .xsession-errors
+rg "youtube_o0x"
+ls
+cat `Extension State/MANIFEST-000001`
+cat `Extension State/CURRENT`
+cat `Extension State/LOG`
+cat `Extension State/000203.log`
+cat `Extension State/000204.log`
+cat `Extension State/000204.ldb`
+cat `Extension State/000203.log`
+cat `Extension State/000204.ldb`
+cat `Extension State/LOG`
+cat `Extension State/LOG.old`
+ls `Extension Rules/`
+cat `Extension Rules/MANIFEST-000001`
+cat `Extension Rules/LOG`
+cat Preferences
+ls
+cat README
+cat `Extension State/LOCK`
+cd `Extension State/`
+ls
+cat LOG
+cat MANIFEST-000001
+cd ../
+ls Exte
+ls Extensions/
+cd ../
+ls
+cat extensions_crx_cache/ajopnjidmegmdimjlfnijceegpefgped_1.f9b06d947ab4251095cf618e66b5aa578ab58adf0241dfb33f72f445fb7e335d
+ls
+cat `Crash Reports/new/`
+ls `Crash Reports/new/`
+ls Default/Extensions/
+cd Default/
+cat ~/.cache/BraveSoftware/Brave-Browser/Default/Cache/Cache_Data/000356f9fc9510f9_0
+cat `~/.cache/BraveSoftware/Brave-Browser/Default/Code Cache/`
+ls Extensions/Temp/
+ls Extensions/nngceckbapebfimnlniiiahkandclblb/
+cat Extensions/nngceckbapebfimnlniiiahkandclblb/2024.1.0_0/manifest.json
+mullvad status
+paucontrol
+cd .config/awesome/
+nvim rc.lua
+git status
+setxkbmap -option caps:escape
+cd ../
+nvim rc.lua
+cd ../nvim/
+git status
+git diff
+cat lua/urho/init.lua
+git restore lua/urho/init.lua
+nvim nvim/init.lua
+git status
+git diff
+git commit -am "adding space and tab options"
+cd nvim/
+nvim init.lua
+git diff
+cd ../awesome/
+git diff
+nvim rc.lua
+git commit -am "adding back freedesktop menu, making popups tile instead of float"
+nvim lua/urho/init.lua
+cd ../nvim/
+ls
+setxkbmap -option caps:escape
+which awesome
+ls -la /usr/bin/awesome
+ls /etc/xdg/awesome/rc.lua
+nvim /usr/share/awesome/lib/awful/widget/calendar_popup.lua
+systemctl status bluetooth
+htop
+systemctl status bluetooth
+bluetoothctl
+exit
+systemctl status bluetooth
+awesome --version
+nvim init.lua
+cd ../awesome/
+git diff
+git commit -am "removing transparency, removing taglist squares, adding theme_name variable"
+git diff
+git push
+git status
+sudo nvim /usr/share/awesome/lib/awful/widget/calendar_popup.lua
+cd ../awesome/
+git diff
+git status
+git commit -am "formatting rc.lua"
+git push
+checkupdates --help
+checkupdates 
+pamac checkupdates -a
+cd .config/awesome/
+setxkbmap -option caps:escape
+cd .config/awesome/
+git status
+git diff
+git commit -am "more formatting rc.lua"
+pamac upgrade -a
+checkupdates 
+xfce4-screenshooter 
+mullvad disconnect
+mullvad connect
+cd ../nvim/
+git status
+git diff
+git commit -am "removing line ending whitespace on save"
+git push
+git log
+git status
+git add lua/urho/api.lua
+git commit -am "adding api.lua file"
+git push
+pamac install android-udev
+checkupdates 
+pamac upgrade -a
+mullvad status
+pacmd list-sinks
+pacmd list-sources
+pamac upgrade -a
+mullvad status
+bluetoothctl
+bluetooth on
+bluetoothctl
+sudo systemctl status bluetooth.service
+sudo systemctl restart bluetooth.service
+bluetoothctl
+bluetooth on
+bluetoothctl
+lsmod | grep btusb
+modinfo btusb
+bluetoothctl
+lsusb
+modinfo btusb
+pamac search bluetooth-autoconnect
+cat /etc/default/grub
+modprobe -r btusb
+sudo modprobe -r btusb
+sudo modprobe btusb
+bluetoothctl
+bluetoothctl power on
+sudo journalctl -f
+rfkill
+btmgmt
+hciconfig
+bash
+pamac install hciconfitg
+pamac install hciconfig
+btmgmt
+bluetoothctl
+checkupdates 
+sig
+pamac upgrade -a
+checkupdates 
+pamac upgrade -a
+checkupdates 
+pamac upgrade -a
+lsusb
+signal-desktop 
+xfce4-screenshooter 
+cat /proc/cpuinfo
+checkupdates 
+pamac upgrade -a
+cd /dev/bus/usb/001/
+ls
+ls -la
+cd 010
+ls -ls 010
+mtp --help
+signal-desktop 
+checkupdates 
+nvim rc.lua
+tmux
+pamac upgrade -a
+sudo nvim /etc/bluetooth/main.conf
+tmux
+cd .config/awesome/
+ls
+git status
+git diff
+nvim rc.lua
+systemctl status docker
+docker --help
+docker ps
+mullvad reconnect
+mullvad status
+cd ../home-assistant/deps
+ls
+cd ../
+ls
+cat home-assistant.log
+nvim configuration.yaml
+ls
+cat home-assistant.log.1
+htop
+docker ps
+docker ps homeassistant
+docker info homeassistant
+docker --help
+docker container --help
+docker container ls
+docker container top homeassistant
+docker container inspect homeassistant
+ls
+cat automations.yaml
+cat home-assistant.log.fault
+cat home-assistant.log
+bash
+pamac upgrade -a
+ls
+ls ../
+ls deps/
+ls
+ls custom_components/
+ls tts/
+cat home-assistant_v2.db
+history | grep "esphome"
+history | grep "docker"
+bash
+cd ../
+mkdir esphome
+cd ../devel/
+ls
+mkdir docker
+cd docker/
+mkdir esphome
+setxkbmap -option caps:escape
+nvim docker-compose.yaml
+ls
+mv docker-compose.yaml esphome/
+cd esphome/
+docker-compose up
+docker --help
+mullvad status
+htop
+bluetoothctl
+mullvad reconnect
+mullvad status
+mullvad disconnect
+mullvad connect
+docker ps homeassistant
+docker ps
+docker container inspect homeassistant
+docker --help
+docker network ps
+docker network ls
+xfce4-screenshooter 
+mullvad disconnect
+mullvad connect
+htop
+checkupdates 
+pamac upgrade -a
+lsusb
+bluetoothctl
+lsusb
+systemctl status bluetooth
+xfce4-screenshooter 
+checkupdates 
+pamac upgrade -a
+cd devel/
+chmod +x qFlipper-x86_64-1.3.3.AppImage
+./qFlipper-x86_64-1.3.3.AppImage
+./qFlipper-x86_64-1.3.3.AppImage rules install
+./qFlipper-x86_64-1.3.3.AppImage
+checkupdates 
+ls
+exit
+checkupdates 
+pamac upgrade -a
+bash
+pamac install pacman-contrib
+checkupdates 
+setxkbmap -option caps:escape
+ls
+cd devel/
+ls
+cat CH341SER_LINUX/readme.txt
+ls docker/
+ls walkingpad/
+cd rust/
+rustup update
+ls
+cargo new --bin ikkuna
+exa
+cargo instal exa
+cargo install exa
+cargo install eza
+eza
+eza -la
+nvim ~/.config/nushell/config.nu
+ls
+exa
+eza
+nvim ~/.config/nushell/config.nu
+ls
+eza
+nvim ~/.config/nushell/config.nu
+cd ikkuna/
+$ cargo add tracing-subscriber --features env-filter
+cargo add tracing-subscriber --features env-filter
+cargo add penrose
+wget https://raw.githubusercontent.com/sminez/penrose/develop/examples/minimal/main.rs
+ls
+mv main.rs src/
+ls
+nvim src/main.rs
+cargo build --release
+nvim .xinitrc
+exit
+cd ~/.config/awesome/
+git status
+git diff
+git commit -am "adding widget that shows when updates are available"
+git push
+checkupdates 
+pamac upgrade -a
+awesome-client --help
+Xephyr :1 -ac -br -noreset -screen 1920x1080
+echo $XDISPLAY
+cd ~/devel/rust/ikkuna/
+ls
+setxkbmap -option caps:escape
+ls
+ls target/release/ikkuna
+cat target/release/ikkuna
+nvim run-xephyr.sh
+./run-xephyr.sh
+sh run-xephyr.sh
+nvim run-xephyr.sh
+sh run-xephyr.sh
+nvim run-xephyr.sh
+ls src/
+nvim src/main.rs
+cargo build --release
+sh run-xephyr.sh
+tmux
+Xephyr --help
+cd devel/rust/ikkuna/
+sh run-xephyr.sh
+nvim run-xephyr.sh
+cargo build
+sh run-xephyr.sh
+Xephyr --help
+wget https://raw.githubusercontent.com/sminez/penrose/develop/examples/status_bar/main.rs
+cat main.rs
+cargo build
+sh run-xephyr.sh
+nvim run-xephyr.sh
+cat xephyr.log
+htop
+sh run-xephyr.sh
+cat /tmp/.X1-lock
+htop
+ps 1369
+ps --help
+ps | where pid == 1369
+cd ~/.config/awesome/
+git diff
+git commit -am "removing keybinds for toggling tags"
+git status
+git diff
+git commit -am "removing trailing comma"
+ls -la /tmp/.X1-lock
+cat /tmp/.X11-unix/
+mullvad reconnect
+ls -la /tmp/
+ls -la /
+mullvad reconnect
+mullvad status
+mullvad reconnect
+mullvad disconnect
+mullvad reconnect
+mullvad status
+mullvad connect
+mullvad status
+mullvad reconnect
+htop
+mullvad st
+mullvad status
+cat /etc/passwd-
+pamac upgrade -a
+cd ~/Downloads/
+ls
+mv `Statement for 2023.pdf` w2-2023.pdf
+ls
+open w2-2023.pdf
+mv w2-2023.pdf ../Documents/taxes/2023/
+signal-desktop 
+signal-desktop &
+tmux
+checkupdates 
+mullvad bridge list
+mullvad bridge set us slc
+mullvad bridge set location us slc
+mullvad bridge set state on
+mullvad bridge get
+mullvad bridge set state off
+mullvad bridge get
+checkupdates 
+mullvad status
+bluetoothctl
+tmux
+exit
+pamac upgrade -a
+mullvad disconnect
+mullvad connect
+bluetoothctl
+pamac upgrade -a
+mullvad status
+pamac upgrade -a
+htop
+bluetoothctl
+cd devel/rust/ikkuna/
+ls
+cat run-xephyr.sh
+./run-xephyr.sh
+ls -la
+chmod +x run-xephyr.sh
+./run-xephyr.sh
+nvim run-xephyr.sh
+./run-xephyr.sh
+ls
+cat main.rs
+cargo test
+nvim main.rs
+cargo build
+ls
+ls src/
+cat src/main.rs
+ls
+rm main.rs
+cargo build
+cat run-xephyr.sh
+ls target/debug/ikkuna
+cat xephyr.log
+cat ~/.xinitrc
+nvim ~/.xinitrc
+./run-xephyr.sh
+c
+clear
+exit
+signal-desktop
+cd devel/rust/ikkuna/
+cat run-xephyr.sh
+ls
+cat xephyr.log
+nvim run-xephyr.sh
+./run-xephyr.sh
+which target/debug/ikkuna
+setxkbmap -option caps:escape
+nvim run-xephyr.sh
+ls
+cargo build
+ls
+rm -r target/
+cargo build
+ls target/debug/ikkuna
+ls -la target/debug/ikkuna
+cat xephyr.log
+cat run-xephyr.sh
+nvim run-xephyr.sh
+./run-xephyr.sh
+cd ../
+git clone git@github.com:sminez/penrose.git
+cd penrose/
+cat Makefile
+EXAMPLE=minimal APP=st make run-embedded
+EXAMPLE=minimal APP=st make run-embeded
+nvim scripts/xephyr.sh
+EXAMPLE=minimal APP=st make run-embeded
+cd ../ikkuna/
+xephyr --help
+Xephyr --help
+nvim run-xephyr.sh
+./run-xephyr.sh
+quit
+EXIT
+exit
+ls
+cd devel/rust/ikkuna/
+cat run-xephyr.sh
+Xephyr :2 -ac -screen 800x600 &
+Xephyr -ac -screen 800x600 :2 &
+bash
+DISPLAY=:2 target/debug/ikkuna
+Xephyr -ac -screen 800x600 :2
+Xephyr +extension RANDR -ac -screen 800x600 :2
+DISPLAY=:2 target/debug/ikkuna
+bash
+bash
+history | rg "Xephyr"
+DISPLAY=:2 awesome -c ~/.config/awesome/rc.lua
+Xephyr +extension RANDR -ac -screen 800x600 :2
+cargo build --release
+DISPLAY=:2 target/release/ikkuna
+Xephyr --help
+DISPLAY=:2.0 target/release/ikkuna
+cat run-xephyr.sh
+Xephyr +extension RANDR -ac -screen 800x600 -background none :2
+cd ../penrose/
+cat Makefile
+EXAMPLE=status_bar make run-embeded
+nvim .xinitrc
+bluetoothctl
+echo $TERMINAL
+env --help
+env
+pamac upgrade -a
+setxkbmap -option caps:escape
+cd devel/rust/ikkuna/
+ls
+ls
+cd devel/rust/ikkuna/
+tmux
+cd .config/awesome/
+ls
+setxkbmap -option caps:escape
+curl https://www.reddit.com/r/awesomewm/comments/1bk4c4w/how_to_wiboxcontainerbackground/
+pamac upgrade -a
+nvim rc.lua
+git status
+git diff
+git commit -am "tweaking some fonts"
+git push
+cd ../
+mkdir zellij
+zellij setup --dump-config > zellij/config.kdl
+help
+help commands
+help
+write
+write --help
+save --help
+zellij setup --dump-config | save zellij/config.kdl
+ls
+ls zellij/
+cat zellij/config.kdl
+pamac install xcape
+cd ../
+setxkbmap -option ctrl:nocaps
+xcape -e "Caps_Lock=Escape"
+xcape -e "Control_l=Escape;Caps_Lock=Escape"
+xcape -e "Control_L=Escape;Caps_Lock=Escape"
+nvim .xinitrc
+nvim ~/.Xmodmap
+nvim zellij/config.kdl
+exit
+exit
+zellij
+cd ../zellij/
+zellij setup --check
+zellij --version
+which zellij
+cargo install zellij
+exit
+nvim config.kdl
+exit
+zellij --version
+zellij
+cd ../
+rm zellij/config.kdl
+zellij setup --dump-config > ~/.config/zellij/config.kdl
+zellij setup --dump-config | save ~/.config/zellij/config.kdl
+nvim zellij/config.kdl
+zellij
+pamac upgrade -a
+mullvad status
+mullvad disconnect
+mullvad connect
+mullvad status
+which awesome
+pamac upgrade -a
+checkupdates 
+bluetoothctl
+mullvad status
+mullvad disconnect
+mullvad connect
+mullvad disconnect
+mullvad connect
+mullvad reconnect
+mullvad status
+setxkbmap -option caps:escape
+setxkbmap -option ctrl:nocaps
+setxkbmap -option caps:escape
+setxkbmap -print -verbose 10
+cat /usr/share/X11/xkb/rules/evdev.xml
+setxkbmap -print -verbose 10
+setxkbmap --help
+man setxkbmap
+setxkbmap -option
+setxkbmap -option caps:escape
+cat /usr/share/X11/xkb/rules/README
+cat /usr/share/X11/xkb/rules/evdev
+nvim awesome/rc.lua
+cd ../devel/rust/ikkuna/
+ls
+cd nvim/
+ls
+setxkbmap -option caps:escape
+nvim src/main.rs
+nvim after/plugin/lsp.lua
+cd nvim/
+ls
+nvim init.lua
+cd ~/devel/rust/ikkuna/
+nvim nvim/lua/urho/init.lua
+nvim nvim/init.lua
+rm nvim/lua/urho/diagnostics.lua
+nvim nvim/lua/urho/diagnostic.lua
+echo $MYVIMRC
+env
+pamac upgrade -a
+mullvad status
+mullvad reconnect
+mullvad status
+setxkbmap -option caps:escape
+nvim src/main.rs
+nvim ~/.config/nvim/lua/urho/init.lua
+rm ~/.config/nvim/lua/urho/diagnostic.lua
+nvim src/main.rs
+bluetoothctl
+bluetoothctl
+pamac remove brave-bin
+pamac upgrade -a
+pamac remove brave-browser
+pamac upgrade -a
+pamac install wireguard-tools
+setxkbmap -option caps:escape
+ls
+cd devel/
+ls
+mkdir mullvad
+cd mullvad/
+curl -o mullvad-wg.sh https://raw.githubusercontent.com/mullvad/mullvad-wg.sh/main/mullvad-wg.sh
+curl -o mullvad-wg.sh.asc https://raw.githubusercontent.com/mullvad/mullvad-wg.sh/main/mullvad-wg.sh.asc
+curl -o mullvad-code-signing.asc https://mullvad.net/media/mullvad-code-signing.asc
+gpg --import mullvad-code-signing.asc
+gpg --verify mullvad-wg.sh.asc
+chmod +x mullvad-wg.sh & ./mullvad-wg.sh
+chmod +x mullvad-wg.sh
+mullvad-wg.sh
+./mullvad-wg.sh
+mullvad disconnect
+su --login
+pamac upgrade -a
+pamac remove mullvad-vpn-cli
+cd ~
+which nu
+nu --version
+cd ../Downloads/
+ls
+mv `2023 4868 (Goldsborough Ross).pdf` `2023 Tax Return Documents (Goldsborough Ross - Client Copy).pdf` `2023 forms to sign_encrypted_.pdf` ../Documents/taxes/2023/
+ls
+mv `Medical ID Card - Ross Goldsborough.pdf` ../Documents/health/
+tar GeistMono.zip
+tar --usage
+nvim .config/nushell/env.nu
+setxkbmap -option caps:escape
+cd ~/Downloads/
+untar GeistMono.zip
+unzip GeistMono.zip
+ls
+cd ../
+mkdir .fonts
+cd .fonts/
+mkdir GeistMono
+mv ~/Downloads/Ge* ~/.fonts/GeistMono/
+ls
+ls GeistMono/
+ls ~/Downloads/
+rm ~/Downloads/*
+ls ~/Downloads/
+mkdir ~/.local/share/fonts
+ls
+mv GeistMono/ ~/.local/share/fonts/
+cd ~/.local/share/fonts/
+ls
+ls GeistMono/
+mkdir otf
+mv GeistMono/ otf/
+rm otf/GeistMono/GeistMono.zip
+nvim .config/alacritty/alacritty.
+ls .config/alacritty/alacritty.
+ls .config/alacritty/
+ls
+nvim .config/alacritty/alacritty.toml
+curl https://www.reddit.com/r/neovim/comments/wy4pfo/how_to_set_colorcolumn_via_nvim_lua_api/
+curl -XGET https://www.reddit.com/r/neovim/comments/wy4pfo/how_to_set_colorcolumn_via_nvim_lua_api/
+nvim ~/.config/nvim/lua/urho/options.lua
+bluetoothctl
+checkupdates 
+pamac upgrade -a
+cd ~
+checkupdates 
+pamac upgrade -a
+curl -XGET https://genius.com/Childish-gambino-little-foot-big-foot-lyrics
+curl --verbose https://genius.com/Childish-gambino-little-foot-big-foot-lyrics
+nvim
+bluetoothctl
+pamac install freetube-bin
+signal-desktop
+freetube 
+tmux attach
+tmux
+tmux attach
+tmux --help
+man tmux
+tmux list-sessions
+tmux detach
+tmux
+tmus list-sessions
+tmux list-sessions
+cat .xsession-errors
+cat /var/log/Xorg.0.log
+cat /var/log/lastlog
+ls
+alacritty -vvv
+glxinfo
+$glxinfo
+which alacritty
+alacritty -V
+^glxinfo
+bash
+signal-desktop
+tmux
+exit
+exit
+pamac upgrade -a
+tmux attach
+exit
+tmux
+tmux list-sessions
+pamac install dotter-rs-bin
+ls -la
+dotter --help
+mkdir .punkte
+rm -r .punkte/
+mkdir .dotfiles
+cd .dotfiles/
+git init
+git config --global init.defaultBranch main
+git branch -m main
+git status
+cp -r ~/.config/nvim/ .
+ls
+mkdir .dotter
+touch .dotter/global.toml .dotter/local.toml
+ls
+git status
+rm -r nvim/
+nvim .gitignore
+git status
+git status .dotter/
+cat .dotter/
+ls .dotter/
+freetube 
+cat ~/.config/awesome/rc.lua
+ls
+git status
+git add .dotter/ .gitignore
+git status
+git commit -am "adding blank global config and gitignore"
+cp -r ~/.config/nvim/ .
+dotter init
+dotter init --force
+ls
+cat .dotter/global.toml
+cd devel/rust/
+git clone git@github.com:SuperCuber/dotter.git
+cd dotter/
+ls nvim/
+mv ~/.config/nvim/ ~/.config/nvim-bkp
+ls ~/.config/
+nvim .dotter/local.toml
+dotter
+ls
+ls ~/.config/
+cat .dotter/global.toml
+nvim .dotter/global.toml
+dotter
+ls ~/.config/
+nvim .dotter/global.toml
+dotter init --force
+stow --help
+pamac install stow
+cd ~/
+mkdir stow
+cd stow/
+ls
+touch .test-rc
+ls
+ls -la
+mkdir test
+touch test/.test-dir-rc
+stow test
+ls ~/
+ls -ls ~
+ls
+ls test/
+cd ../
+ls -la
+cd stow/
+stow .test-rc
+mullvad status
+systemctl status wg-quick
+su --login
+tmux
+nvim .dotter/global.toml
+ls -la ~
+ls -la ~/.config/
+setxkbmap -option caps:escape
+rm -r ~/.config/nvim/
+cd .dotter/
+dotter deploy
+cd ../
+dotter deploy
+ls
+ls -la
+rm -r ~/.config/nvim-bkp/
+ls -la ~/.config/
+rm ~/.config/nvim/
+rm -r ~/.config/nvim/
+ls -la ~/.config/
+dotter deploy
+ls -la ~/.config/
+cd nvim/
+ls -la
+rm -rf .git/
+cd ../
+rm -rf ~/.config/nvim/
+dotter deploy
+git remote add origin git@github.com:ducks/dotfiles.git
+cd ../
+mv .dotfiles/ dotfiles
+ls dotfiles/
+cd dotfiles/
+git status
+git diff
+git add nvim/
+git commit -am "adding nvim config files"
+git log
+git push -u origin main
+ls ~/.config/
+ls ~/.config/nushell/
+rm ~/.config/nushell/old*
+rm ~/.config/nushell/config.nu.save
+ls ~/.config/nushell/
+ls -la ~/.config/nushell/
+nvim dotfiles/.dotter/global.toml
+bash
+git status
+git diff
+git add nushell/
