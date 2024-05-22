@@ -1,5 +1,11 @@
 [helpers]
 
+[awesomewm]
+depends = []
+
+[awesomewm.files]
+awesome = { target = '~/.config/awesome/', type = 'symbolic' }
+
 [nushell]
 depends = []
 
