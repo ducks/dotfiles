@@ -319,10 +319,27 @@ $env.config = {
   use_ansi_coloring: true
   bracketed_paste: true # enable bracketed paste, currently useless on windows
   edit_mode: emacs # emacs, vi
-  shell_integration: true # enables terminal markers and a workaround to arrow keys stop working issue
-  render_right_prompt_on_last_line: false # true or false to enable or disable right prompt to be rendered on last line of the prompt.
+  shell_integration: {
+    # osc2 abbreviates the path if in the home_dir, sets the tab/window title,
+    # shows the running command in the tab/window title
+    osc2: true
+    # osc7 is a way to communicate the path to the terminal, this is helpful
+    # for spawning new tabs in the same directory
+    osc7: true
+    # osc8 is also implemented as the deprecated setting
+    # ls.show_clickable_links, it shows clickable links in ls output if our
+    # terminal supports it. show_clickable_links is deprecated in favor of osc8
+    osc8: true
+    # reset_application_mode is escape \x1b[?1l and was added to help ssh work
+    # better
+    reset_application_mode: true
+  }
 
+  # true or false to enable or disable right prompt to be rendered on last line
+  # of the prompt.
+  render_right_prompt_on_last_line: false
   hooks: {
+
     pre_prompt: [{||
       null  # replace with source code to run before the prompt is shown
     }]
