@@ -84,8 +84,10 @@ $env.NU_PLUGIN_DIRS = [
 ]
 
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
-$env.PATH = ($env.PATH | split row (char esep) |
-  prepend '~/.volta/bin'
+$env.PATH = ($env.PATH |
+  split row (char esep) |
+  append '~/.volta/bin' |
+  append ($env.HOME | path join dev rust wezterm target release)
 )
 
 mkdir ~/.cache/starship
