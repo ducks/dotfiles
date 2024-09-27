@@ -54,7 +54,8 @@ beautiful.init("~/.config/awesome/themes/gruvbox-squares/theme.lua")
 browser = "exo-open --launch WebBrowser" or "firefox"
 filemanager = "exo-open --launch FileManager" or "thunar"
 gui_editor = "mousepad"
-terminal = "alacritty"
+-- terminal = "alacritty"
+terminal = "/home/urho/dev/rust/wezterm/target/release/wezterm"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
