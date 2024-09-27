@@ -24,3 +24,9 @@ depends = []
 nvim = "~/.config/nvim"
 
 [nvim.variables]
+
+[wezterm]
+depends = []
+
+[wezterm.files]
+wezterm = '~/.config/wezterm'
