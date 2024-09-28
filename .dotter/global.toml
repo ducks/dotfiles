@@ -9,6 +9,9 @@ depends = []
 [awesomewm.files]
 awesome = { target = '~/.config/awesome/', type = 'symbolic' }
 
+[git.files]
+git = '~/.config/git'
+
 [nushell]
 depends = []
 
