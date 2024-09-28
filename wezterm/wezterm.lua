@@ -24,4 +24,6 @@ config.colors = {
 
 config.use_dead_keys = false
 
+config.enable_wayland = false
+
 return config
