@@ -28,6 +28,9 @@ nvim = "~/.config/nvim"
 
 [nvim.variables]
 
+[sway.files]
+sway = '~/.config/sway'
+
 [wezterm]
 depends = []
 
