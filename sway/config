@@ -16,6 +16,8 @@ set $aqua #689d68
 set $gray #a89984
 set $darkgray #1d2021
 
+font pango:Berkeley Mono 12
+
 # class                 border|backgr|text|indicator|child_border
 client.focused          $purple $purple $darkgray $green $darkgray
 client.focused_inactive $darkgray $darkgray $purple $purple $darkgray
