@@ -12,6 +12,9 @@ awesome = { target = '~/.config/awesome/', type = 'symbolic' }
 [git.files]
 git = '~/.config/git'
 
+[nixos.files]
+nixos = '/etc/nixos'
+
 [nushell]
 depends = []
 
