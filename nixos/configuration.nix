@@ -83,12 +83,6 @@ in
           servers = {
             #ts-ls.enable = true; # TS/JS
             lua_ls.enable = true; # lua
-
-            rust_analyzer = {
-              enable = true; # rust
-              installCargo = true;
-              installRustc = true;
-            };
           };
         };
 
@@ -100,7 +94,14 @@ in
           enable = true;
         };
 
-        rust-tools.enable = true;
+        rustaceanvim = {
+          enable = true;
+          settings = {
+            server = {
+              standalone = true;
+            };
+          };
+        };
 
         lualine = {
           enable = true;
