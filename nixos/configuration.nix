@@ -82,9 +82,9 @@ in
 
           servers = {
             #ts-ls.enable = true; # TS/JS
-            lua-ls.enable = true; # lua
+            lua_ls.enable = true; # lua
 
-            rust-analyzer = {
+            rust_analyzer = {
               enable = true; # rust
               installCargo = true;
               installRustc = true;
