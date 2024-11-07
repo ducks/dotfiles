@@ -1,10 +1,24 @@
 local wezterm = require 'wezterm'
 local config = {}
+local act = wezterm.action
 
 local purple = '#b16286'
 
 config.color_scheme = 'Gruvbox dark, hard (base16)'
 config.font = wezterm.font 'Berkeley Mono'
+
+config.keys = {
+  {
+    key = 'h',
+    mods = 'CTRL',
+    action = act.ActivateTabRelative(-1),
+  },
+  {
+    key = 'l',
+    mods = 'CTRL',
+    action = act.ActivateTabRelative(1),
+  },
+}
 
 --
 -- Tab bar config
