@@ -159,6 +159,14 @@ in
     hyprland = {
       enable = true;
     };
+
+    light = {
+      enable = true;
+
+      brightnessKeys = {
+        enable = true;
+      };
+    };
   };
 
   environment.systemPackages = with pkgs; [
@@ -196,7 +204,7 @@ in
     disco = {
       isNormalUser = true;
       home = "/home/disco";
-      extraGroups = [ "wheel" "networkmanager"];
+      extraGroups = [ "wheel" "networkmanager" "video"];
     };
   };
 
