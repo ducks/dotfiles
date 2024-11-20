@@ -7,16 +7,31 @@ local purple = '#b16286'
 config.color_scheme = 'Gruvbox dark, hard (base16)'
 config.font = wezterm.font 'Berkeley Mono'
 
+config.leader = {
+  key = 'Space',
+  mods = 'SHIFT',
+}
+
 config.keys = {
   {
     key = 'h',
-    mods = 'CTRL',
+    mods = 'LEADER',
     action = act.ActivateTabRelative(-1),
   },
   {
     key = 'l',
-    mods = 'CTRL',
+    mods = 'LEADER',
     action = act.ActivateTabRelative(1),
+  },
+  {
+    key = 't',
+    mods = 'LEADER',
+    action = act.SpawnTab('DefaultDomain'),
+  },
+  {
+    key = 'w',
+    mods = 'LEADER',
+    action = act.CloseCurrentTab({ confirm = false }),
   },
 }
 
