@@ -176,6 +176,7 @@ in
     clang
     rustup
     nodejs_22
+    pamixer
   ];
 
   fonts.packages = with pkgs; [
@@ -191,13 +192,16 @@ in
   # time.timeZone = "Europe/Amsterdam";
 
   # Enable sound.
-  # hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.enable = false;
+
+  security.rtkit.enable = true;
   # OR
   services.pipewire = {
     enable = true;
     systemWide = true;
     alsa.enable = true;
     pulse.enable = true;
+    jack.enable = true;
   };
 
   users.users = {
