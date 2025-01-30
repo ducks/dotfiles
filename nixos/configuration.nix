@@ -51,7 +51,7 @@ in
     nixvim = {
       enable = true;
       defaultEditor = true;
-      colorschemes.gruvbox.enable = true;
+      colorscheme = "gruvbox";
 
       globals = {
         mapleader = " ";
@@ -114,8 +114,6 @@ in
 
         lualine = {
           enable = true;
-
-          settings.options.theme = "gruvbox";
         };
 
         cmp = {
