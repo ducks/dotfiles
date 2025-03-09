@@ -51,6 +51,7 @@ in
     nixvim = {
       enable = true;
       defaultEditor = true;
+      extraPlugins = [ pkgs.vimPlugins.gruvbox ];
       colorscheme = "gruvbox";
 
       globals = {
@@ -176,6 +177,9 @@ in
     rustup
     nodejs_22
     pamixer
+    libreoffice
+    hunspell
+    hunspellDicts.en_US
   ];
 
   fonts.packages = with pkgs; [
