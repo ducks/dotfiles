@@ -180,6 +180,7 @@ in
     libreoffice
     hunspell
     hunspellDicts.en_US
+    anki-bin
   ];
 
   fonts.packages = with pkgs; [
