@@ -7,28 +7,28 @@ local purple = '#b16286'
 config.color_scheme = 'Gruvbox dark, hard (base16)'
 config.font = wezterm.font 'Berkeley Mono'
 
-SHIFT_SUPER = 'SHIFT | SUPER'
+CTRL_SUPER = 'CTRL | SUPER'
 
 config.keys = {
   {
     key = 'h',
-    mods = SHIFT_SUPER,
+    mods = CTRL_SUPER,
     action = act.ActivateTabRelative(-1),
   },
   {
     key = 'l',
-    mods = SHIFT_SUPER,
+    mods = CTRL_SUPER,
     action = act.ActivateTabRelative(1),
   },
   {
     key = 'n',
-    mods = SHIFT_SUPER,
+    mods = CTRL_SUPER,
     action = act.SpawnTab('DefaultDomain'),
   },
   {
-    key = 'w',
-    mods = SHIFT_SUPER,
-    action = act.CloseCurrentTab({ confirm = false }),
+    key = "CapsLock",
+    mods = "",
+    action = wezterm.action.SendKey { key = "Escape" },
   },
 }
 
@@ -52,6 +52,6 @@ config.colors = {
 
 config.use_dead_keys = false
 
-config.enable_wayland = false
+config.enable_wayland = true
 
 return config
