@@ -12,6 +12,9 @@ awesome = { target = '~/.config/awesome/', type = 'symbolic' }
 [git.files]
 git = '~/.config/git'
 
+[hypr.files]
+hypr = '~/.config/hypr'
+
 [nixos.files]
 nixos = '/etc/nixos'
 
