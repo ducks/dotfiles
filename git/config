@@ -1,3 +1,13 @@
 [user]
-name = Jake Goldsborough
-email = jake.goldsborough@pm.me
+  name = Jake Goldsborough
+  email = jake.goldsborough@pm.me
+
+[alias]
+  c = commit
+  cam = commit -am
+  co = checkout
+  cob = checkout -b
+  moff = merge --no-ff
+
+[init]
+  defaultBranch = main

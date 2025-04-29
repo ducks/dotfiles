@@ -10,7 +10,7 @@ depends = []
 awesome = { target = '~/.config/awesome/', type = 'symbolic' }
 
 [git.files]
-git = '~/.config/git'
+'git/config' = '~/.gitconfig'
 
 [hypr.files]
 hypr = '~/.config/hypr'
