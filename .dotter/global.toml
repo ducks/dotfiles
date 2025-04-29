@@ -37,6 +37,8 @@ nvim = "~/.config/nvim"
 [sway.files]
 sway = '~/.config/sway'
 
+[waybar.files]
+waybar = '~/.config/waybar'
 [wezterm]
 depends = []
 
