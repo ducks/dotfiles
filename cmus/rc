@@ -1,0 +1,46 @@
+# Base window colors
+set color_win_fg=default
+set color_win_bg=default
+
+# Command line prompt
+set color_cmdline_fg=default
+set color_cmdline_bg=default
+
+# Message and info text
+set color_error=red
+set color_info=172
+set color_separator=white
+
+# Bottom status bar
+set color_statusline_fg=black
+set color_statusline_bg=172
+
+# Title bar (bottom)
+set color_titleline_fg=black
+set color_titleline_bg=white
+
+# Window title area
+set color_win_title_fg=black
+set color_win_title_bg=white
+
+# Current playing file
+set color_win_cur=172
+
+# Selected playing file
+set color_win_cur_sel_fg=white
+set color_win_cur_sel_bg=172
+
+# Inactive selected playing file
+set color_win_inactive_cur_sel_fg=white
+set color_win_inactive_cur_sel_bg=172
+
+# Selected item (non-playing)
+set color_win_sel_fg=white
+set color_win_sel_bg=172
+
+# Inactive selected item
+set color_win_inactive_sel_fg=black
+set color_win_inactive_sel_bg=172
+
+# Directories in browser
+set color_win_dir=172

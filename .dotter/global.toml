@@ -9,6 +9,9 @@ depends = []
 [awesomewm.files]
 awesome = { target = '~/.config/awesome/', type = 'symbolic' }
 
+[cmus.files]
+'cmus/rc' = '~/.config/cmus/rc'
+
 [git.files]
 'git/config' = '~/.gitconfig'
 
