@@ -1,0 +1,30 @@
+#workspaces {
+  margin: 0 6px;
+  padding: 0;
+}
+
+#workspaces button {
+  border: none;
+  padding: 4px;
+  margin: 2px;
+  min-width: 16px;
+  min-height: 16px;
+  background-color: transparent;
+  color: #928374; /* Gruvbox gray for inactive */
+  border-radius: 0; /* square shape */
+}
+
+#workspaces button.focused {
+  background-color: #d79921; /* Gruvbox orange for active */
+  color: black;
+}
+
+#workspaces button.active {
+  background-color: #fabd2f; /* brighter orange */
+  color: black;
+}
+
+#workspaces button.urgent {
+  background-color: #cc241d; /* red for urgent windows */
+  color: white;
+}
