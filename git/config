@@ -8,6 +8,7 @@
   co = checkout
   cob = checkout -b
   moff = merge --no-ff
+  dlm = "!git branch --merged main | grep -vE '^\\*|main' | xargs -r git branch -d"
 
 [init]
   defaultBranch = main
