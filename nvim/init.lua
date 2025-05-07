@@ -1,1 +1,1 @@
-require('urho')
+require('config.lazy')
