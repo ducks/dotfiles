@@ -7,22 +7,22 @@ local purple = '#b16286'
 config.color_scheme = 'Gruvbox dark, hard (base16)'
 config.font = wezterm.font 'Berkeley Mono'
 
-CTRL_SUPER = 'CTRL | SUPER'
+local mod = 'CTRL | ALT'
 
 config.keys = {
   {
     key = 'h',
-    mods = CTRL_SUPER,
+    mods = mod,
     action = act.ActivateTabRelative(-1),
   },
   {
     key = 'l',
-    mods = CTRL_SUPER,
+    mods = mod,
     action = act.ActivateTabRelative(1),
   },
   {
     key = 'n',
-    mods = CTRL_SUPER,
+    mods = mod,
     action = act.SpawnTab('DefaultDomain'),
   },
   {
