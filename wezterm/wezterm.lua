@@ -26,6 +26,11 @@ config.keys = {
     action = act.SpawnTab('DefaultDomain'),
   },
   {
+    key = 'w',
+    mods = mod,
+    action = act.CloseCurrentTab { confirm = true },
+  },
+  {
     key = "CapsLock",
     mods = "",
     action = wezterm.action.SendKey { key = "Escape" },
