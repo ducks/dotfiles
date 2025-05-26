@@ -1,5 +1,5 @@
 return {
-  { 
+  {
     'nvim-treesitter/nvim-treesitter',
 
     opts = {
@@ -15,7 +15,10 @@ return {
         "query",
         "typescript",
         "rust",
-        "nu"
+        "nu",
+        "html",
+        "css",
+        "vue"
       },
     },
   },
