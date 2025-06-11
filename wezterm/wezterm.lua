@@ -7,7 +7,7 @@ local purple = '#b16286'
 config.color_scheme = 'Gruvbox dark, hard (base16)'
 config.font = wezterm.font 'Berkeley Mono'
 
-local mod = 'CTRL | ALT'
+local mod = 'CTRL | SUPER'
 
 config.keys = {
   {
