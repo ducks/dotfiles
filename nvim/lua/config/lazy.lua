@@ -32,6 +32,9 @@ vim.diagnostic.config({
   update_in_insert = false,
 })
 
+vim.cmd([[
+  autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
+]])
 
 -- Setup lazy.nvim
 require("lazy").setup({
