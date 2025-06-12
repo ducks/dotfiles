@@ -1,0 +1,9 @@
+show = drun
+prompt = Search:
+width = 500
+height = 300
+location = center
+allow_images = false
+term = wezterm
+hide_scroll = true
+no_actions = true
