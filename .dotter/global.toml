@@ -47,3 +47,6 @@ depends = []
 
 [wezterm.files]
 wezterm = '~/.config/wezterm'
+
+[wofi.files]
+wofi = '~/.config/wofi'
