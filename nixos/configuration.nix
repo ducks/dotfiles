@@ -12,13 +12,14 @@ let
   berkeley-mono = pkgs.callPackage ./packages/berkeley-mono.nix { };
   nixvim = import (builtins.fetchGit {
     url = "https://github.com/nix-community/nixvim";
-    ref = "nixos-24.05";
+    # ref = "nixos-24.05";
   });
 in
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./packages/interception-caps.nix
       nixvim.nixosModules.nixvim
     ];
 
@@ -153,9 +154,6 @@ in
         # };
       };
     };
-    sway = {
-      enable = true;
-    };
     hyprland = {
       enable = true;
     };
@@ -167,6 +165,12 @@ in
         enable = true;
       };
     };
+  };
+
+  xdg.portal = {
+    enable = true;
+    wlr.enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
   };
 
   environment.systemPackages = with pkgs; [
@@ -181,6 +185,14 @@ in
     hunspell
     hunspellDicts.en_US
     anki-bin
+    hyprpaper
+    hyprlock
+    hypridle
+    wofi
+    waybar
+    dotter
+    dunst
+    bibata-cursors
   ];
 
   fonts.packages = with pkgs; [
@@ -212,7 +224,14 @@ in
     disco = {
       isNormalUser = true;
       home = "/home/disco";
-      extraGroups = [ "wheel" "networkmanager" "video"];
+      extraGroups = [ 
+        "wheel" 
+	"networkmanager" 
+	"audio"
+	"video"
+	"input"
+	"docker"
+      ];
     };
   };
 
