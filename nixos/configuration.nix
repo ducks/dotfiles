@@ -12,13 +12,14 @@ let
   berkeley-mono = pkgs.callPackage ./packages/berkeley-mono.nix { };
   nixvim = import (builtins.fetchGit {
     url = "https://github.com/nix-community/nixvim";
-    ref = "nixos-24.05";
+    # ref = "nixos-24.05";
   });
 in
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./packages/interception-caps.nix
       nixvim.nixosModules.nixvim
     ];
 
@@ -78,83 +79,80 @@ in
         smartindent = true;
       };
 
-      plugins = {
-        lsp = {
-          enable = true;
+      # plugins = {
+      #   lsp = {
+      #     enable = true;
 
 
-          keymaps = {
-            diagnostic = {
-              "<leader>j" = "goto_next";
-              "<leader>k" = "goto_prev";
-            };
-          };
+      #     keymaps = {
+      #       diagnostic = {
+      #         "<leader>j" = "goto_next";
+      #         "<leader>k" = "goto_prev";
+      #       };
+      #     };
 
-          servers = {
-            #ts-ls.enable = true; # TS/JS
-            lua_ls.enable = true; # lua
-          };
-        };
+      #     servers = {
+      #       #ts-ls.enable = true; # TS/JS
+      #       lua_ls.enable = true; # lua
+      #     };
+      #   };
 
-        luasnip = {
-          enable = true;
-        };
+      #   luasnip = {
+      #     enable = true;
+      #   };
 
-        nvim-autopairs = {
-          enable = true;
-        };
+      #   nvim-autopairs = {
+      #     enable = true;
+      #   };
 
-        rustaceanvim = {
-          enable = true;
-          settings = {
-            server = {
-              standalone = true;
-            };
-          };
-        };
+      #   rustaceanvim = {
+      #     enable = true;
+      #     settings = {
+      #       server = {
+      #         standalone = true;
+      #       };
+      #     };
+      #   };
 
-        lualine = {
-          enable = true;
-        };
+      #   lualine = {
+      #     enable = true;
+      #   };
 
-        cmp = {
-          enable = true;
-          autoEnableSources = true;
+      #   cmp = {
+      #     enable = true;
+      #     autoEnableSources = true;
 
-          settings = {
-            mapping = {
-              "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
-              "<C-j>" = "cmp.mapping.select_next_item()";
-              "<C-k>" = "cmp.mapping.select_prev_item()";
-              "<C-e>" = "cmp.mapping.abort()";
-              "<C-b>" = "cmp.mapping.scroll_docs(-4)";
-              "<C-f>" = "cmp.mapping.scroll_docs(4)";
-              "<C-Space>" = "cmp.mapping.complete()";
-              "<C-CR>" = "cmp.mapping.confirm({ select = true })";
-            };
+      #     settings = {
+      #       mapping = {
+      #         "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+      #         "<C-j>" = "cmp.mapping.select_next_item()";
+      #         "<C-k>" = "cmp.mapping.select_prev_item()";
+      #         "<C-e>" = "cmp.mapping.abort()";
+      #         "<C-b>" = "cmp.mapping.scroll_docs(-4)";
+      #         "<C-f>" = "cmp.mapping.scroll_docs(4)";
+      #         "<C-Space>" = "cmp.mapping.complete()";
+      #         "<C-CR>" = "cmp.mapping.confirm({ select = true })";
+      #       };
 
-            snippet = {
-              expand = "function(args) require('luasnip').lsp_expand(args.body) end";
-            };
+      #       snippet = {
+      #         expand = "function(args) require('luasnip').lsp_expand(args.body) end";
+      #       };
 
-            sources = [
-              { name = "nvim_lsp"; }
-              { name = "nvim_lua"; }
-              { name = "path"; }
-              { name = "buffer"; }
-              { name = "luasnip"; }
-            ]; 
-          };
-        };
+      #       sources = [
+      #         { name = "nvim_lsp"; }
+      #         { name = "nvim_lua"; }
+      #         { name = "path"; }
+      #         { name = "buffer"; }
+      #         { name = "luasnip"; }
+      #       ]; 
+      #     };
+      #   };
 
-        # TODO: fix treesitter errors
-        # treesitter = {
-        #   enable = true;
-        # };
-      };
-    };
-    sway = {
-      enable = true;
+      #   # TODO: fix treesitter errors
+      #   # treesitter = {
+      #   #   enable = true;
+      #   # };
+      # };
     };
     hyprland = {
       enable = true;
@@ -169,6 +167,12 @@ in
     };
   };
 
+  xdg.portal = {
+    enable = true;
+    wlr.enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
+  };
+
   environment.systemPackages = with pkgs; [
     git
     librewolf
@@ -181,6 +185,14 @@ in
     hunspell
     hunspellDicts.en_US
     anki-bin
+    hyprpaper
+    hyprlock
+    hypridle
+    wofi
+    waybar
+    dotter
+    dunst
+    bibata-cursors
   ];
 
   fonts.packages = with pkgs; [
@@ -212,7 +224,14 @@ in
     disco = {
       isNormalUser = true;
       home = "/home/disco";
-      extraGroups = [ "wheel" "networkmanager" "video"];
+      extraGroups = [ 
+        "wheel" 
+	"networkmanager" 
+	"audio"
+	"video"
+	"input"
+	"docker"
+      ];
     };
   };
 
