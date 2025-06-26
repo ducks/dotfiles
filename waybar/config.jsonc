@@ -17,10 +17,9 @@
         "cpu",
         "memory",
         "temperature",
-        "backlight",
         "clock",
-        //"tray",
         "custom/bluetooth",
+	"battery",
         "custom/power"
     ],
     "tray": {
@@ -58,14 +57,7 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format": "bat: {capacity}%"
     },
     "battery#bat2": {
         "bat": "BAT2"
