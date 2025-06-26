@@ -12,52 +12,17 @@
     "modules-center": [
     ],
     "modules-right": [
-        "mpd",
-        "idle_inhibitor",
         "pulseaudio",
-        "network",
         "power-profiles-daemon",
         "cpu",
         "memory",
         "temperature",
         "backlight",
         "clock",
-        "tray",
+        //"tray",
+        "custom/bluetooth",
         "custom/power"
     ],
-    "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-        "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-        "unknown-tag": "N/A",
-        "interval": 5,
-        "consume-icons": {
-            "on": " "
-        },
-        "random-icons": {
-            "off": "<span color=\"#f53c3c\"></span> ",
-            "on": " "
-        },
-        "repeat-icons": {
-            "on": " "
-        },
-        "single-icons": {
-            "on": "1 "
-        },
-        "state-icons": {
-            "paused": "",
-            "playing": ""
-        },
-        "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)"
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
     "tray": {
         // "icon-size": 21,
         "spacing": 10
@@ -69,19 +34,18 @@
         "interval": 1
     },
     "cpu": {
-        "format": "{usage}% ",
+        "format": "cpu: {usage}% | ",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": "ram: {}% | "
     },
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+        "format": "temp: {temperatureC}°C | "
     },
     "backlight": {
         // "device": "acpi_video1",
@@ -128,25 +92,26 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
+        "format": "vol: {volume}% | ",
+        // "format": "vol: {volume}% {icon} {format_source}",
+        // "format-bluetooth": "{volume}% {icon} {format_source}",
+        // "format-bluetooth-muted": " {icon} {format_source}",
+        // "format-muted": " {format_source}",
+        // "format-source": "{volume}% ",
+        // "format-source-muted": "",
+        // "format-icons": {
+        //     "headphone": "",
+        //     "hands-free": "",
+        //     "headset": "",
+        //     "phone": "",
+        //     "portable": "",
+        //     "car": "",
+        //     "default": ["", "", ""]
+        // },
         "on-click": "pavucontrol"
     },
     "custom/power": {
-        "format" : "⏻ ",
+        "format" : "power ",
 		"tooltip": false,
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
@@ -171,5 +136,12 @@
       },
       "disable-scroll": true,
       "on-click": "activate"
+    },
+
+    "custom/bluetooth": {
+      "format": " | BT | ",
+      "tooltip": "Bluetooth Settings",
+      "on-click": "blueman-manager",
+      "interval": 0
     }
 }
