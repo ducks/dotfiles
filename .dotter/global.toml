@@ -12,6 +12,9 @@ awesome = { target = '~/.config/awesome/', type = 'symbolic' }
 [cmus.files]
 'cmus/rc' = '~/.config/cmus/rc'
 
+[fonts.files]
+fonts = '~/.config/fonts'
+
 [git.files]
 'git/config' = '~/.gitconfig'
 
