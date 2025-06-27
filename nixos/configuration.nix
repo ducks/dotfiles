@@ -18,7 +18,7 @@ in
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      /etc/nixos/hardware-configuration.nix
       ./packages/interception-caps.nix
       nixvim.nixosModules.nixvim
     ];
