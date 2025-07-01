@@ -195,6 +195,11 @@ in
     dotter
     dunst
     bibata-cursors
+    nushell
+  ];
+
+  environment.shells = with pkgs; [
+    nushell
   ];
 
   fonts.packages = with pkgs; [
