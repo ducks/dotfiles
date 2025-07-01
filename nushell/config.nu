@@ -585,4 +585,4 @@ alias cob = git checkout -b
 alias pull = git pull
 alias push = git push
 
-use ~/.cache/starship/init.nu
+use ~/.config/starship/init.nu
