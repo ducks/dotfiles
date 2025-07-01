@@ -165,6 +165,8 @@ in
         enable = true;
       };
     };
+
+    starship.enable = true;
   };
 
   xdg.portal = {
