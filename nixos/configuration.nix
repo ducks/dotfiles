@@ -19,7 +19,7 @@ in
   imports =
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix
-      ./packages/interception-caps.nix
+      /etc/nixos/packages/interception-caps.nix
       nixvim.nixosModules.nixvim
     ];
 
@@ -226,11 +226,11 @@ in
       home = "/home/disco";
       extraGroups = [ 
         "wheel" 
-	"networkmanager" 
-	"audio"
-	"video"
-	"input"
-	"docker"
+        "networkmanager"
+        "audio"
+        "video"
+        "input"
+        "docker"
       ];
     };
   };
