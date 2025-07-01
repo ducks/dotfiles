@@ -40,6 +40,9 @@ nvim = "~/.config/nvim"
 
 [nvim.variables]
 
+[starship.files]
+starship = '~/.config/starship'
+
 [sway.files]
 sway = '~/.config/sway'
 
