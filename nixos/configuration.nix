@@ -106,7 +106,7 @@ in
   # time.timeZone = "Europe/Amsterdam";
 
   # Enable sound.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
 
   security.rtkit.enable = true;
   # OR
