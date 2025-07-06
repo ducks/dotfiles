@@ -73,6 +73,7 @@ in
     clang
     rustup
     nodejs_22
+    rust-analyzer
     pamixer
     libreoffice
     hunspell
@@ -87,6 +88,9 @@ in
     dunst
     bibata-cursors
     nushell
+    docker
+    docker-compose
+    greetd.tuigreet
   ];
 
   environment.shells = with pkgs; [
@@ -97,7 +101,9 @@ in
     berkeley-mono 
   ];
 
-  # networking.hostName = "nixos"; # Define your hostname.
+  virtualisation.docker.enable = true;
+
+  networking.hostName = "nixbook"; # Define your hostname.
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
@@ -105,18 +111,21 @@ in
   # Set your time zone.
   # time.timeZone = "Europe/Amsterdam";
 
-  # Enable sound.
-  services.pulseaudio.enable = false;
+  hardware.pulseaudio.enable = false;
 
   security.rtkit.enable = true;
   # OR
   services.pipewire = {
     enable = true;
-    systemWide = true;
+    audio.enable = true;
     alsa.enable = true;
+    alsa.support32Bit = true;
     pulse.enable = true;
     jack.enable = true;
   };
+
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
 
   users.users = {
     disco = {
@@ -132,6 +141,17 @@ in
       ];
     };
   };
+
+  services.greetd ={
+    enable = true;
+    settings = {
+      default_session = {
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --user-menu --cmd Hyprland";
+        user = "greeter";
+      };
+    };
+  };
+
 
   nix.settings.experimental-features = [
     "nix-command"

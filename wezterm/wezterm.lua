@@ -59,4 +59,10 @@ config.use_dead_keys = false
 
 config.enable_wayland = true
 
+config.harfbuzz_features = {
+  "liga=0",
+  "clig=0",
+  "calt=0",
+}
+
 return config
