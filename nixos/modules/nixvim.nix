@@ -3,7 +3,7 @@
 let
   nixvim = import (builtins.fetchGit {
     url = "https://github.com/nix-community/nixvim";
-    # ref = "nixos-24.05";
+    ref = "nixos-24.05";
   });
 in
 {
@@ -56,8 +56,8 @@ in
           };
 
           servers = {
-            #ts-ls.enable = true; # TS/JS
-            lua_ls.enable = true; # lua
+            tsserver.enable = true; # TS/JS
+            lua-ls.enable = true; # lua
           };
         };
 
@@ -79,6 +79,10 @@ in
         };
 
         lualine = {
+          enable = true;
+        };
+
+        cmp-nvim-lsp = {
           enable = true;
         };
 
@@ -112,11 +116,33 @@ in
           };
         };
 
-        # TODO: fix treesitter errors
-        # treesitter = {
-        #   enable = true;
-        # };
+        treesitter = {
+          enable = true;
+        };
       };
+
+
+      keymaps = [
+        {
+          mode = "n";
+          key = "<leader>w";
+          action = "<cmd>write<cr>";
+        }
+        {
+          mode = "n";
+          key = "<leader>q";
+          action = "<cmd>quit<cr>";
+        }
+        {
+          mode = "n";
+          key = "<leader><leader>";
+          action = "/";
+          options = {
+            silent = true;
+            noremap = true;
+          };
+        }
+      ];
     };
   };
 }
