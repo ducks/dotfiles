@@ -91,6 +91,7 @@ in
     docker
     docker-compose
     greetd.tuigreet
+    wl-clipboard
   ];
 
   environment.shells = with pkgs; [
