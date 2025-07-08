@@ -3,7 +3,6 @@
 let
   intercept = "${pkgs.interception-tools}/bin/intercept";
   uinput = "${pkgs.interception-tools}/bin/uinput";
-  dual = "${pkgs.interception-tools-plugins.dual-function-keys}/bin/dual-function-keys";
 in {
   services.interception-tools = {
     enable = true;
