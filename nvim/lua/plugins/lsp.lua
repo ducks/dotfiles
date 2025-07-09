@@ -61,6 +61,13 @@ return {
             },
           })
         end,
+        ["nu_ls"] = function()
+          require("lspconfig").nu_ls.setup({
+            cmd = { "nu", "--lsp" },
+            filetypes = { "nu" },
+            capabilities = require("cmp_nvim_lsp").default_capabilities(),
+          })
+        end
       },
     },
   },
