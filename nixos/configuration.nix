@@ -71,8 +71,6 @@ in
     librewolf
     wezterm
     clang
-    rustup
-    nodejs_22
     rust-analyzer
     pamixer
     libreoffice
