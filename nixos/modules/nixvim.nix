@@ -16,7 +16,19 @@ in
     nixvim = {
       enable = true;
       defaultEditor = true;
-      extraPlugins = [ pkgs.vimPlugins.gruvbox ];
+      extraPlugins = [
+        pkgs.vimPlugins.gruvbox
+        (pkgs.vimUtils.buildVimPlugin {
+          pname = "nvim-vandelay";
+          version = "2025-07-10";
+          src = pkgs.fetchFromGitHub {
+            owner = "ducks";
+            repo = "nvim-vandelay";
+            rev = "main";  # or a specific commit SHA
+            sha256 = "0xiqs3dmca1x5310z2p0d1x91d6l3cnmnf83m47rnv6bin58zkv5";
+          };
+        })
+      ];
       colorscheme = "gruvbox";
 
       globals = {
@@ -140,6 +152,15 @@ in
           options = {
             silent = true;
             noremap = true;
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>mi";
+          action.__raw = "function() require('vandelay').format_current_line() end";
+          options = {
+            noremap = true;
+            silent = true;
           };
         }
       ];
