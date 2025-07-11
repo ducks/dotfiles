@@ -2,162 +2,18 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ 
+{
   config,
   lib,
   pkgs,
-  ... 
-}: 
-let
-  berkeley-mono = pkgs.callPackage ./modules/berkeley-mono.nix { };
-in
+  ...
+}:
+
 {
   imports =
     [ # Include the results of the hardware scan.
-      /etc/nixos/hardware-configuration.nix
-      /etc/nixos/modules/interception-caps.nix
-      /etc/nixos/modules/nixvim.nix
+      ./hosts/{{host}}.nix
     ];
-
-  fileSystems."/" =
-    { device = "/dev/disk/by-label/nixos";
-      fsType = "ext4";
-    };
-
-  fileSystems."/boot" =
-    { device = "/dev/disk/by-label/boot";
-      fsType = "vfat";
-      options = [ "fmask=0077" "dmask=0077" ];
-    };
-
-  swapDevices = [
-    {
-      device = "/dev/disk/by-label/swap";
-    }
-  ];
-
-  nixpkgs.config = {
-    allowUnfree = true;
-  };
-
-  # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
-  programs = {
-    hyprland = {
-      enable = true;
-    };
-
-    light = {
-      enable = true;
-
-      brightnessKeys = {
-        enable = true;
-      };
-    };
-
-    starship.enable = true;
-  };
-
-  xdg.portal = {
-    enable = true;
-    wlr.enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
-  };
-
-  environment.systemPackages = with pkgs; [
-    git
-    librewolf
-    wezterm
-    clang
-    rust-analyzer
-    pamixer
-    libreoffice
-    hunspell
-    hunspellDicts.en_US
-    anki-bin
-    hyprpaper
-    hyprlock
-    hypridle
-    wofi
-    waybar
-    dotter
-    dunst
-    bibata-cursors
-    nushell
-    docker
-    docker-compose
-    greetd.tuigreet
-    wl-clipboard
-  ];
-
-  environment.shells = with pkgs; [
-    nushell
-  ];
-
-  fonts.packages = with pkgs; [
-    berkeley-mono 
-  ];
-
-  virtualisation.docker.enable = true;
-
-  networking.hostName = "nixbook"; # Define your hostname.
-  # Pick only one of the below networking options.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
-
-  # Set your time zone.
-  # time.timeZone = "Europe/Amsterdam";
-
-  hardware.pulseaudio.enable = false;
-
-  security.rtkit.enable = true;
-  # OR
-  services.pipewire = {
-    enable = true;
-    audio.enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    jack.enable = true;
-  };
-
-  services.mullvad-vpn.enable = true;
-
-  hardware.bluetooth.enable = true;
-  services.blueman.enable = true;
-
-  users.users = {
-    disco = {
-      isNormalUser = true;
-      home = "/home/disco";
-      extraGroups = [ 
-        "wheel" 
-        "networkmanager"
-        "audio"
-        "video"
-        "input"
-        "docker"
-      ];
-    };
-  };
-
-  services.greetd ={
-    enable = true;
-    settings = {
-      default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --user-menu --cmd Hyprland";
-        user = "greeter";
-      };
-    };
-  };
-
-
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
 
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you
