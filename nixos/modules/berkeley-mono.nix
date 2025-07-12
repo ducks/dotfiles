@@ -4,7 +4,7 @@
 stdenvNoCC.mkDerivation {
   pname = "berkeley-mono-font";
   version = "1.0";
-  src = /home/disco/.config/fonts/berkeley-mono;
+  src = /home/ducks/.config/fonts/berkeley-mono;
 
   installPhase = ''
     mkdir -p $out/share/fonts/truetype/
