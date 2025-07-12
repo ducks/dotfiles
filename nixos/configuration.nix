@@ -12,7 +12,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hosts/{{host}}.nix
+      ./hosts/{{ hostname }}.nix
     ];
 
   # Copy the NixOS configuration file and link it from the resulting system

@@ -2,15 +2,15 @@
 
 {
   imports = [
+    ../hardware-configuration.nix
+    ../common/base.nix
     ../common/users.nix
+    ../common/desktop.nix
     ../common/packages.nix
     ../common/services.nix
-    ../hardware-configuration.nix
-    ../common/misc.nix
-    ../common/dev.nix
   ];
 
-  networking.hostName = "macbook";
+  networking.hostName = "{{ hostname }}";
 
   fileSystems."/" ={
     device = "/dev/disk/by-label/nixos";

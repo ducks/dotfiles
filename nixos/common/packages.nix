@@ -3,24 +3,8 @@
   ...
 }:
 {
-  imports = [
-    /etc/nixos/modules/interception-caps.nix
-    /etc/nixos/modules/nixvim.nix
-  ];
-
-  nixpkgs.config = {
-    allowUnfree = true;
-  };
-
   environment.systemPackages = with pkgs; [
-    git
-    librewolf
-    wezterm
-    clang
-    rustup
-    nodejs_22
-    rust-analyzer
-    pamixer
+    # desktop packages
     libreoffice
     hunspell
     hunspellDicts.en_US
@@ -30,35 +14,19 @@
     hypridle
     wofi
     waybar
-    dotter
     dunst
     bibata-cursors
+    pamixer
+    greetd.tuigreet
+    wl-clipboard
+
+    # dev packages
+    git
+    wezterm
+    librewolf
+    dotter
     nushell
     docker
     docker-compose
-    greetd.tuigreet
-    wl-clipboard
   ];
-
-  programs = {
-    hyprland = {
-      enable = true;
-    };
-
-    light = {
-      enable = true;
-
-      brightnessKeys = {
-        enable = true;
-      };
-    };
-
-    starship.enable = true;
-  };
-
-  xdg.portal = {
-    enable = true;
-    wlr.enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
-  };
 }
