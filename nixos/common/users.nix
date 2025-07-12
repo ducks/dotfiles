@@ -4,9 +4,9 @@
 
 {
 users.users = {
-    disco = {
+    ducks = {
       isNormalUser = true;
-      home = "/home/disco";
+      home = "/home/ducks";
       extraGroups = [
         "wheel"
         "networkmanager"

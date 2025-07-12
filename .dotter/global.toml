@@ -22,7 +22,7 @@ fonts = '~/.config/fonts'
 hypr = '~/.config/hypr'
 
 [nixos.files]
-nixos = { target = '/etc/nixos', type = 'template' }
+nixos = '/etc/nixos'
 
 [nushell]
 depends = []
