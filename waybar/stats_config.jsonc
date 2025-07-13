@@ -1,0 +1,61 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 30, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-right": [
+        "cpu",
+        "memory",
+        "temperature",
+        "custom/bluetooth",
+        "battery",
+        "custom/power"
+    ],
+    "cpu": {
+        "format": "cpu: {usage}% | ",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "ram: {}% | "
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format-critical": "temp: {temperatureC}°C !! | ",
+        "format": "temp: {temperatureC}°C |"
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "bat: {capacity}%",
+        "format-charging": "bat: {capacity}% charging",
+        "format-plugged": "bat: {capacity}% plugged"
+
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "custom/power": {
+      "format" : "power ",
+      "tooltip": false,
+      "menu": "on-click",
+      "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+      "menu-actions": {
+        "shutdown": "shutdown",
+        "reboot": "reboot",
+        "suspend": "systemctl suspend",
+        "hibernate": "systemctl hibernate"
+      }
+    },
+    "custom/bluetooth": {
+      "format": "BT | ",
+      "tooltip": "Bluetooth Settings",
+      "on-click": "blueman-manager",
+      "interval": 0
+    }
+}
