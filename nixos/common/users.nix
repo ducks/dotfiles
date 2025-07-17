@@ -1,5 +1,5 @@
 {
-  ...
+  pkgs, ...
 }:
 
 {
@@ -15,6 +15,7 @@ users.users = {
         "input"
         "docker"
       ];
+      shell = pkgs.nushell;
     };
   };
 }
