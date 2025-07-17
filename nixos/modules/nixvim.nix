@@ -14,6 +14,13 @@ in
   programs = {
     nixvim = {
       enable = true;
+      autoCmd = [
+        {
+          event = [ "BufWritePre" ];
+          pattern = [ "*" ];
+          command = ":%s/\\s\\+$//e";
+        }
+      ];
       defaultEditor = true;
       extraPlugins = [
         pkgs.vimPlugins.gruvbox
@@ -36,18 +43,18 @@ in
 
       # TODO: modularize nixvim config
       opts = {
-        background = "dark"; 
+        background = "dark";
         number = true;
-        
+
         colorcolumn = "80";
-        
+
         updatetime = 50;
-        
+
         hlsearch = false;
         ignorecase = true;
-        
+
         swapfile = false;
-        
+
         tabstop = 2;
         shiftwidth = 2;
         expandtab = true;
@@ -123,7 +130,7 @@ in
               { name = "path"; }
               { name = "buffer"; }
               { name = "luasnip"; }
-            ]; 
+            ];
           };
         };
 
