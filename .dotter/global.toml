@@ -19,7 +19,7 @@ fonts = '~/.config/fonts'
 'git/config' = '~/.gitconfig'
 
 [hypr.files]
-hypr = '~/.config/hypr'
+hypr = { target = '~/.config/hypr', type = "template" }
 
 [nixos.files]
 nixos = '/etc/nixos'
@@ -52,7 +52,7 @@ waybar = '~/.config/waybar'
 depends = []
 
 [wezterm.files]
-wezterm = '~/.config/wezterm'
+wezterm = { target = '~/.config/wezterm', type ="template" }
 
 [wofi.files]
 wofi = '~/.config/wofi'
