@@ -28,5 +28,6 @@
     nushell
     docker
     docker-compose
+    fish
   ];
 }
