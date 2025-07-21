@@ -7,8 +7,9 @@ in
   nixpkgs.config = {
     allowUnfree = true;
   };
+
   # Set your time zone.
-  # time.timeZone = "Europe/Amsterdam";
+  time.timeZone = "America/Los_Angeles";
 
   virtualisation.docker.enable = true;
 
