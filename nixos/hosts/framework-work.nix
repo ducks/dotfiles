@@ -8,6 +8,7 @@
     ../common/packages.nix
     ../common/services.nix
     ../common/uefi.nix
+    ../modules/kolide.nix
   ];
 
   networking.hostName = "framework-work";
