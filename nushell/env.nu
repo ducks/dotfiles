@@ -87,7 +87,8 @@ $env.NU_PLUGIN_DIRS = [
 $env.PATH = ($env.PATH |
   split row (char esep) |
   append '~/.volta/bin' |
-  append ($env.HOME | path join dev rust wezterm target release)
+  append ($env.HOME | path join dev rust wezterm target release) |
+  append ($env.HOME | path join discourse ops bin)
 )
 
 mkdir ~/.cache/starship
