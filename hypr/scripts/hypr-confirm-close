@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# simple "yes/no" prompt; change to bemenu if you prefer
+choice=$(printf "No\nYes" \
+  | wofi --dmenu --prompt="Close window?" --lines=5)
+if [ "$choice" = "Yes" ]; then
+  hyprctl dispatch killactive
+fi
+
