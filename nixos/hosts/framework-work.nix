@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -19,4 +19,16 @@
     polkitPolicyOwners = [ "ducks" ];
   };
 
+  # 1. Enable the system-wide gpg-agent service (systemd socket).
+  # This is all that is needed from the module.
+  programs.gnupg.agent.enable = true;
+
+  # 2. Make the necessary tools available to all users.
+  # The gpg-agent will find 'pinentry-curses' because it's in the PATH.
+  environment.systemPackages = with pkgs; [
+    gnupg
+    pinentry-curses
+  ];
+
+  hardware.enableRedistributableFirmware = true;
 }
