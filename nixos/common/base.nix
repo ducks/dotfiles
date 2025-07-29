@@ -30,4 +30,6 @@ in
   environment.shells = with pkgs; [
     nushell
   ];
+
+  programs.ssh.startAgent = true;
 }
