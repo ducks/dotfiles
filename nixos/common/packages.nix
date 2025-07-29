@@ -19,11 +19,13 @@
     pamixer
     greetd.tuigreet
     wl-clipboard
+    yazi
 
     # dev packages
     git
     wezterm
     librewolf
+    firefox
     dotter
     nushell
     docker
