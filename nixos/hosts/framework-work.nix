@@ -28,6 +28,7 @@
   environment.systemPackages = with pkgs; [
     gnupg
     pinentry-curses
+    pass
   ];
 
   hardware.enableRedistributableFirmware = true;
