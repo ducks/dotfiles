@@ -4,7 +4,7 @@ This guide covers migrating your MSI desktop (ps-ms7a75) from Manjaro to NixOS.
 
 ## System Specifications
 
-- **Hostname:** desktop (currently ps-ms7a75)
+- **Hostname:** creek (currently ps-ms7a75)
 - **CPU:** Intel Core i7-7700K
 - **GPU:** NVIDIA GeForce GTX 1060 6GB
 - **Monitor:** 2560x1440@144Hz
@@ -82,8 +82,8 @@ sudo nixos-generate-config --root /mnt
 ### 7. Clone Your Dotfiles
 
 ```bash
-sudo mkdir -p /mnt/home/urho
-cd /mnt/home/urho
+sudo mkdir -p /mnt/home/ducks
+cd /mnt/home/ducks
 sudo git clone https://github.com/yourusername/dotfiles.git
 ```
 
@@ -91,7 +91,7 @@ sudo git clone https://github.com/yourusername/dotfiles.git
 
 ```bash
 # Copy or symlink your desktop configuration
-sudo cp /mnt/home/urho/dotfiles/nixos/hosts/desktop.nix /mnt/etc/nixos/configuration.nix
+sudo cp /mnt/home/ducks/dotfiles/nixos/hosts/desktop.nix /mnt/etc/nixos/configuration.nix
 
 # Or better, use the modular approach:
 sudo nano /mnt/etc/nixos/configuration.nix
@@ -104,7 +104,7 @@ Add to `/mnt/etc/nixos/configuration.nix`:
 {
   imports = [
     ./hardware-configuration.nix
-    /home/urho/dotfiles/nixos/hosts/desktop.nix
+    /home/ducks/dotfiles/nixos/hosts/desktop.nix
   ];
 
   system.stateVersion = "24.11";  # Use current stable version
@@ -131,7 +131,7 @@ You'll be prompted to set a root password.
 
 ```bash
 sudo nixos-enter
-passwd urho
+passwd ducks
 exit
 ```
 

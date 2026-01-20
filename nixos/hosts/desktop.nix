@@ -10,7 +10,7 @@
     ../common/uefi.nix
   ];
 
-  networking.hostName = "desktop";
+  networking.hostName = "creek";
 
   # NVIDIA GPU configuration
   services.xserver.videoDrivers = [ "nvidia" ];
