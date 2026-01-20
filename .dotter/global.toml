@@ -21,6 +21,7 @@ fonts = '~/.config/fonts'
 [hypr.files]
 hypr = { target = '~/.config/hypr', type = "template" }
 'hypr/files/background.png' = { target = '~/.config/hypr/files/background.png', type = "symbolic" }
+'hypr/files/background.jpg' = { target = '~/.config/hypr/files/background.jpg', type = "symbolic" }
 
 [nixos.files]
 nixos = '/etc/nixos'
