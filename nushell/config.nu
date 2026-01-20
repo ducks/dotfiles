@@ -186,7 +186,7 @@ let light_theme = {
 let fish_completer = {|spans|
 
     # if the current command is an alias, get it's expansion
-    let expanded_alias = (scope aliases | where name == $spans.0 | get -i 0 | get -i expansion)
+    let expanded_alias = (scope aliases | where name == $spans.0 | get -o 0 | get -o expansion)
 
     # overwrite
     let spans = (if $expanded_alias != null  {
@@ -291,7 +291,7 @@ $env.config = {
     max_size: 100_000 # Session has to be reloaded for this to take effect
     sync_on_enter: true # Enable to share history between multiple sessions, else you have to close the session to write history to file
     file_format: "plaintext" # "sqlite" or "plaintext"
-    isolation: true # true enables history isolation, false disables it. true will allow the history to be isolated to the current session. false will allow the history to be shared across all sessions.
+    isolation: false # true enables history isolation, false disables it. true will allow the history to be isolated to the current session. false will allow the history to be shared across all sessions.
   }
   completions: {
     case_sensitive: false # set to true to enable case-sensitive completions
