@@ -43,16 +43,13 @@ def create_right_prompt [] {
     ([$last_exit_code, (char space), $time_segment] | str join)
 }
 
-# Use nushell functions to define your right and left prompt
-$env.PROMPT_COMMAND = {|| create_left_prompt }
-$env.PROMPT_COMMAND_RIGHT = {|| create_right_prompt }
-
-# The prompt indicators are environmental variables that represent
-# the state of the prompt
-$env.PROMPT_INDICATOR = {|| "> " }
-$env.PROMPT_INDICATOR_VI_INSERT = {|| ": " }
-$env.PROMPT_INDICATOR_VI_NORMAL = {|| "> " }
-$env.PROMPT_MULTILINE_INDICATOR = {|| "::: " }
+# Prompt configuration moved to config.nu to allow Starship override
+# $env.PROMPT_COMMAND = {|| create_left_prompt }
+# $env.PROMPT_COMMAND_RIGHT = {|| create_right_prompt }
+# $env.PROMPT_INDICATOR = {|| "> " }
+# $env.PROMPT_INDICATOR_VI_INSERT = {|| ": " }
+# $env.PROMPT_INDICATOR_VI_NORMAL = {|| "> " }
+# $env.PROMPT_MULTILINE_INDICATOR = {|| "::: " }
 
 # Specifies how environment variables are:
 # - converted from a string to a value on Nushell startup (from_string)
@@ -91,5 +88,4 @@ $env.PATH = ($env.PATH |
   append ($env.HOME | path join discourse ops bin)
 )
 
-mkdir ~/.cache/starship
-starship init nu | save -f ~/.cache/starship/init.nu
+starship init nu | save -f ~/dotfiles/nushell/starship.nu
