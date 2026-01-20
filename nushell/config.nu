@@ -587,8 +587,4 @@ alias cob = git checkout -b
 alias pull = git pull
 alias push = git push
 
-use ~/.config/starship/init.nu
-
-def shot [] {
-  ^grim -g ( ^slurp | str trim ) - | ^wl-copy --type image/png
-}
+source ~/dotfiles/nushell/starship.nu
