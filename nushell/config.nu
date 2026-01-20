@@ -2,6 +2,8 @@
 #
 # version = 0.82.0
 
+use ~/.config/nushell/aliases/screenshot.nu
+
 # For more information on defining custom themes, see
 # https://www.nushell.sh/book/coloring_and_theming.html
 # And here is the theme collection
