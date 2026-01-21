@@ -5,7 +5,7 @@
 export-env { $env.STARSHIP_SHELL = "nu"; load-env {
     STARSHIP_SESSION_KEY: (random chars -l 16)
     PROMPT_MULTILINE_INDICATOR: (
-        ^/usr/bin/starship prompt --continuation
+        ^starship prompt --continuation
     )
 
     # Does not play well with default character module.
@@ -13,21 +13,12 @@ export-env { $env.STARSHIP_SHELL = "nu"; load-env {
     PROMPT_INDICATOR: ""
 
     PROMPT_COMMAND: {||
+        # jobs are not supported
         (
-            # The initial value of `$env.CMD_DURATION_MS` is always `0823`, which is an official setting.
-            # See https://github.com/nushell/nushell/discussions/6402#discussioncomment-3466687.
-            let cmd_duration = if $env.CMD_DURATION_MS == "0823" { 0 } else { $env.CMD_DURATION_MS };
-            ^/usr/bin/starship prompt
-                --cmd-duration $cmd_duration
+            ^starship prompt
+                --cmd-duration $env.CMD_DURATION_MS
                 $"--status=($env.LAST_EXIT_CODE)"
                 --terminal-width (term size).columns
-                ...(
-                    if (which "job list" | where type == built-in | is-not-empty) {
-                        ["--jobs", (job list | length)]
-                    } else {
-                        []
-                    }
-                )
         )
     }
 
@@ -37,21 +28,11 @@ export-env { $env.STARSHIP_SHELL = "nu"; load-env {
 
     PROMPT_COMMAND_RIGHT: {||
         (
-            # The initial value of `$env.CMD_DURATION_MS` is always `0823`, which is an official setting.
-            # See https://github.com/nushell/nushell/discussions/6402#discussioncomment-3466687.
-            let cmd_duration = if $env.CMD_DURATION_MS == "0823" { 0 } else { $env.CMD_DURATION_MS };
-            ^/usr/bin/starship prompt
+            ^starship prompt
                 --right
-                --cmd-duration $cmd_duration
+                --cmd-duration $env.CMD_DURATION_MS
                 $"--status=($env.LAST_EXIT_CODE)"
                 --terminal-width (term size).columns
-                ...(
-                    if (which "job list" | where type == built-in | is-not-empty) {
-                        ["--jobs", (job list | length)]
-                    } else {
-                        []
-                    }
-                )
         )
     }
 }}
