@@ -588,3 +588,8 @@ alias pull = git pull
 alias push = git push
 
 source ~/dotfiles/nushell/starship.nu
+
+# Source local/work-specific config if it exists
+if ($"($env.HOME)/.config/nushell/local.nu" | path exists) {
+  source ~/.config/nushell/local.nu
+}
