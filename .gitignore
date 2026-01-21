@@ -3,5 +3,6 @@
 .dotter/cache
 
 nushell/history.txt
+nushell/local.nu
 
 result
