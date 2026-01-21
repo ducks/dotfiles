@@ -15,7 +15,7 @@
     wireplumber.enable = true;
   };
 
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
 
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
@@ -31,5 +31,7 @@
   };
 
   services.mullvad-vpn.enable = true;
+
+  services.fwupd.enable = true;
 }
 
