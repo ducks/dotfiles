@@ -20,6 +20,7 @@
     greetd.tuigreet
     wl-clipboard
     yazi
+    kanshi
 
     # dev packages
     git
@@ -31,5 +32,13 @@
     docker
     docker-compose
     fish
+    ripgrep
+    jq
+    glow
+    tree
+    starship
+    tmux
+    mdcat
+    gh
   ];
 }
