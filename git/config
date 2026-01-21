@@ -1,6 +1,11 @@
-[user]
-  name = Jake Goldsborough
-  email = jake.goldsborough@pm.me
+[includeIf "gitdir:~/discourse/"]
+  path = ~/.gitconfig-work
+
+[includeIf "gitdir:~/dev/"]
+  path = ~/.gitconfig-personal
+
+[includeIf "gitdir:~/dotfiles/"]
+  path = ~/.gitconfig-personal
 
 [alias]
   c = commit
@@ -10,5 +15,9 @@
   moff = merge --no-ff
   dlm = "!git branch --merged main | grep -vE '^\\*|main' | xargs -r git branch -d"
 
+  squash = "!git reset --soft $(git merge-base HEAD origin/main)"
+
 [init]
   defaultBranch = main
+[core]
+	excludesfile = /home/ducks/.gitignore_global
