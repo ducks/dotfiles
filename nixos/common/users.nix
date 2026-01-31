@@ -14,6 +14,7 @@ users.users = {
         "video"
         "input"
         "docker"
+        "dialout"  # Framework LED matrix
       ];
       shell = pkgs.nushell;
     };
