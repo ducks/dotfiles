@@ -11,10 +11,12 @@ in
     "${nix-agent-flake}/modules/kolide-launcher"
   ];
 
+  # Note: Use k2device.kolide.com, NOT app.kolide.com
+  # The launcher only recognizes k2device.kolide.com for enabling the control
+  # service and desktop runner (needed for browser-based enrollment)
   services.kolide-launcher = {
     enable = true;
-    kolideHostname = "k2.kolide.com";
+    kolideHostname = "k2device.kolide.com";
     updateChannel = "nightly";
   };
 }
-
