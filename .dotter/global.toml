@@ -58,3 +58,6 @@ wezterm = { target = '~/.config/wezterm', type ="template" }
 
 [wofi.files]
 wofi = '~/.config/wofi'
+
+[claude.files]
+'claude/plugins' = '~/.claude/plugins/local'
