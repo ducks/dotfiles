@@ -1,0 +1,7 @@
+{
+  "name": "person-eval",
+  "description": "Generate professional evaluations from Discourse forum activity using Graham Duncan's framework",
+  "author": {
+    "name": "ducks"
+  }
+}

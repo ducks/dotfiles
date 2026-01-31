@@ -1,0 +1,15 @@
+{
+  "name": "local-plugins",
+  "description": "Local Claude Code plugins",
+  "owner": {
+    "name": "ducks"
+  },
+  "plugins": [
+    {
+      "name": "person-eval",
+      "description": "Generate professional evaluations from Discourse forum activity using Graham Duncan's framework",
+      "source": "./person-eval",
+      "version": "20260131"
+    }
+  ]
+}
