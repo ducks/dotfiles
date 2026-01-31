@@ -40,5 +40,8 @@
     tmux
     mdcat
     gh
+
+    # Framework 16 LED matrix
+    inputmodule-control
   ];
 }
