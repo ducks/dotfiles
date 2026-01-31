@@ -20,7 +20,7 @@ This skill activates when the user wants to:
 ## Usage
 
 Provide a username and Discourse site URL:
-- "evaluate ducks on https://dev.discourse.org"
+- "evaluate ducks on https://meta.discourse.org"
 - "person evaluation for sam on https://meta.discourse.org"
 
 ## Instructions
