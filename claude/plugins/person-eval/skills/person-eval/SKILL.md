@@ -2,6 +2,7 @@
 name: person-eval
 description: This skill should be used when the user asks to "evaluate a person", "person evaluation", "professional evaluation", "analyze user activity", "Graham Duncan framework", "what's going on with this human", or wants to generate a professional assessment from Discourse forum activity.
 version: 20260131
+argument-hint: <username> <site-url> [timeframe]
 ---
 
 # Person Evaluation Skill
@@ -9,19 +10,8 @@ version: 20260131
 Generate a professional evaluation based on Discourse forum activity, inspired
 by Graham Duncan's "What's going on here, with this human?" framework.
 
-## When This Skill Applies
-
-This skill activates when the user wants to:
-- Evaluate someone based on their forum activity
-- Generate a professional assessment for 1:1s or reviews
-- Analyze communication patterns and strengths from posts
-- Apply the Graham Duncan evaluation framework
-
-## Usage
-
-Provide a username and Discourse site URL:
-- "evaluate ducks on https://meta.discourse.org"
-- "person evaluation for sam on https://meta.discourse.org"
+**Target**: Evaluate user `$0` on `$1`
+**Timeframe**: `$2` (if not specified, use recent activity)
 
 ## Instructions
 
@@ -31,10 +21,10 @@ Follow these phases IN ORDER:
 
 Use the discourse-mcp tools to collect data:
 
-1. Call `discourse_select_site` with the provided site URL
-2. Call `discourse_get_user` to get the user's profile
-3. Call `discourse_list_user_posts` to get their recent posts (2-3 pages, ~60-90 posts)
-4. Call `discourse_read_post` on 8-12 substantive posts (longer content, interesting topics)
+1. Call `discourse_select_site` with site URL: `$1`
+2. Call `discourse_get_user` to get the profile for: `$0`
+3. Call `discourse_list_user_posts` to get their posts, filtering to the specified timeframe if provided (e.g., "2025", "last 6 months", "Q4 2025"). Gather enough pages to cover the period.
+4. Call `discourse_read_post` on 8-12 substantive posts from within the timeframe (longer content, interesting topics)
 
 Summarize what you gathered before proceeding.
 
