@@ -9,6 +9,7 @@
     ../common/services.nix
     ../common/uefi.nix
     ../modules/kolide.nix
+    ../modules/led-matrix.nix
   ];
 
   networking.hostName = "framework-work";
@@ -54,4 +55,6 @@
   '';
 
   services.gns3-server.enable = true;
+
+  services.ollama.enable = true;
 }
