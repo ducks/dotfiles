@@ -44,6 +44,7 @@
     pass
     gns3-gui
     _1password-cli
+    llama-cpp
   ];
 
   hardware.enableRedistributableFirmware = true;
@@ -55,6 +56,4 @@
   '';
 
   services.gns3-server.enable = true;
-
-  services.ollama.enable = true;
 }
