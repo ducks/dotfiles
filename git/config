@@ -19,5 +19,7 @@
 
 [init]
   defaultBranch = main
+
 [core]
-	excludesfile = /home/ducks/.gitignore_global
+  editor = nvim
+  excludesfile = ~/.config/git/ignore

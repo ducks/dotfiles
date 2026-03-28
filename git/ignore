@@ -1,0 +1,22 @@
+# Claude Code local settings
+**/.claude/settings.local.json
+
+# Ruby
+.gems
+vendor/bundle
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Build artifacts
+node_modules/
+dist/
+build/
