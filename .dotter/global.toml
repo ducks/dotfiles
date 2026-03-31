@@ -18,6 +18,7 @@ fonts = '~/.config/fonts'
 [git.files]
 'git/config' = '~/.gitconfig'
 'git/ignore' = '~/.config/git/ignore'
+'git/config-personal' = '~/.gitconfig-personal'
 
 [hypr.files]
 hypr = { target = '~/.config/hypr', type = "template" }
