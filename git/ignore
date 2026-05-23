@@ -21,3 +21,7 @@ Thumbs.db
 node_modules/
 dist/
 build/
+
+# nix
+.nix-bundle
+.nix-postgres
