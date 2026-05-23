@@ -56,4 +56,19 @@
   '';
 
   services.gns3-server.enable = true;
+
+  # nix-ld: run unpatched dynamically-linked binaries (e.g. the upstream
+  # Claude Code binary) without per-shell wrappers. Installs a stub at
+  # /lib64/ld-linux-x86-64.so.2 that redirects to the real Nix linker, so
+  # /proc/self/exe and argv[0] stay correct — which the wrapper approach
+  # in claude-nixos/shell.nix can't preserve.
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    stdenv.cc.cc
+    zlib
+    openssl
+    xz
+    sqlite
+    curl
+  ];
 }
